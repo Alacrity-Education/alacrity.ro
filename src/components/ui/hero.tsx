@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
           <a
             href="https://buymeacoffee.com/alacrity_education"
-            className="btn btn-primary z-10 dark:shadow-xl"
+            className="btn btn-primary btn-xl z-10 dark:shadow-xl"
           >
             Donate
           </a>
