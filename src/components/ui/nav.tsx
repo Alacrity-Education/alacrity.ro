@@ -7,7 +7,9 @@ export default function Navbar() {
         <a className="btn btn-ghost text-xl text-primary">Alacrity Education</a>
       </div>
       <div className="flex-none flex gap-2">
-        {/* <button className="btn btn-ghost  ">About</button> */}
+        <a href="https://blog.alacrity.ro" className="btn btn-ghost  ">
+          Blog
+        </a>
         <a
           href="https://buymeacoffee.com/alacrity_education"
           className="btn btn-primary "

@@ -44,16 +44,6 @@ export default function Team() {
       image: "/adina.jpg",
     },
     {
-      name: "Duțu Antonia",
-      role: "Data Analyst",
-      image: "/antonia.jpg",
-    },
-    {
-      name: "Boinegri Denisa",
-      role: "Student Researcher",
-      image: "/denisa.jpg",
-    },
-    {
       name: "Sima Bianca",
       role: "Student Researcher",
       image: "/bianca.png",
@@ -61,10 +51,12 @@ export default function Team() {
     {
       name: "Stoica Mihai",
       role: "Trainer",
+      image: "/vlad.jpg",
     },
     {
       name: "Vlad",
       role: "Trainer",
+      image: "/mihai.jpg",
     },
   ];
 
