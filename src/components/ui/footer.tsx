@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-flow-col gap-4">
           <a
             href="https://www.instagram.com/alacrity_education/"
-            className=" w-max"
+            className="h-10 w-10 sm:h-5 sm:w-5"
           >
             <Image
               src="instagram.svg"
