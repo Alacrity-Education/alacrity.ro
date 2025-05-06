@@ -116,7 +116,7 @@ export default function About() {
   );
 }
 
-export function HistoryCard({
+function HistoryCard({
   time,
   children,
 }: {
