@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -10,7 +11,7 @@ interface CardProps {
 
 export default function About() {
   return (
-    <div className="text-primary-content min-h-screen relative bg-primary pb-4 flex flex-colitems-center ">
+    <div className="text-primary-content min-h-screen relative bg-gradient-to-b from-primary to-neutral pb-4 flex flex-colitems-center ">
       <div className=" absolute h-full w-full overflow-clip">
         <Image
           alt="bg"
@@ -49,7 +50,7 @@ export default function About() {
             <p className="py-20 pt-10 text-xl max-w-sm sm:max-w-2xl">
               We are Alacrity Education, a youth-founded NGO, created by young
               people for young people, driven by the desire to promote
-              high-quality STEAM (Science, Technology, Engineering, and
+              high-quality STEAM (Science, Technology, Engineering, Arts and
               Mathematics) education.
             </p>
             <h1 className="text-2xl font-semibold pt-5">
@@ -64,6 +65,9 @@ export default function About() {
             </p>
           </div>
         </div>
+        <Link href="/about" className="btn btn-xl btn-primary">
+          Read More
+        </Link>
       </div>
       <div className="custom-shape-divider-bottom-1737549060">
         <svg

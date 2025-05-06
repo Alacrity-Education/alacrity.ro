@@ -15,7 +15,7 @@ export default function Team() {
     },
     {
       name: "Heroiu Justinian",
-      role: "Tech Lead",
+      role: "AirBox Tech Lead",
       image: "/justin.png",
     },
     {
@@ -25,7 +25,7 @@ export default function Team() {
     },
     {
       name: "Sainenco Luchian",
-      role: "Tech Lead",
+      role: "Tech Manager",
       image: "/luca.png",
     },
     {

@@ -2,115 +2,113 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-  name: "alacritydark";
-  default: true;
-  prefersdark: true;
-  color-scheme: "dark";
-  --color-base-100: #1b1224;
-  --color-base-200: #160e1e;
-  --color-base-300: #110a18;
-  --color-base-content: #ccc9cf;
-  --color-primary: #7b40a3;
-  --color-primary-content: #e4d8ee;
-  --color-secondary: #701454;
-  --color-secondary-content: #e4cfdb;
-  --color-accent: #50247c;
-  --color-accent-content: #d9d1e6;
-  --color-neutral: #2e0947;
-  --color-neutral-content: #ebddf6;
-  --color-info: #a884bf;
-  --color-info-content: #0a060d;
-  --color-success: #6f11ad;
-  --color-success-content: #d4cfd9;
-  --color-warning: #8537ad;
-  --color-warning-content: #e6d7f0;
-  --color-error: #571944;
-  --color-error-content: #ddced7;
-  --radius-selector: 1rem;
-  --radius-field: 1rem;
-  --radius-box: 0.25rem;
-  --size-selector: 0.28125rem;
-  --size-field: 0.21875rem;
-  --border: 1px;
-  --depth: 1;
-  --noise: 1;
+    name: "alacritydark";
+    default: true;
+    prefersdark: true;
+    color-scheme: "dark";
+    --color-base-100: #1b1224;
+    --color-base-200: #160e1e;
+    --color-base-300: #110a18;
+    --color-base-content: #ccc9cf;
+    --color-primary: var(--color-purple-500);
+    --color-primary-content: #e4d8ee;
+    --color-secondary: var(--color-pink-500);
+    --color-secondary-content: var(--color-base-100);
+    --color-accent: #50247c;
+    --color-accent-content: #d9d1e6;
+    --color-neutral: #2e0947;
+    --color-neutral-content: #ebddf6;
+    --color-info: #a884bf;
+    --color-info-content: #0a060d;
+    --color-success: #6f11ad;
+    --color-success-content: #d4cfd9;
+    --color-warning: #8537ad;
+    --color-warning-content: #e6d7f0;
+    --color-error: #571944;
+    --color-error-content: #ddced7;
+    --radius-selector: 1rem;
+    --radius-field: 1rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.21875rem;
+    --border: 1px;
+    --depth: 1;
+      --noise:  1;
 }
 
-
 @plugin "daisyui/theme" {
-  name: "alacrity";
-  default: true;
-  prefersdark: false;
-  color-scheme: "light";
-  --color-base-100: oklch(100% 0 0);
-  --color-base-200: oklch(98% 0 0);
-  --color-base-300: oklch(95% 0 0);
-  --color-base-content: oklch(21% 0.006 285.885);
-  --color-primary: #281464;
-  --color-primary-content: #d9d1df;
-  --color-secondary: #701454;
-  --color-secondary-content: #e4cfdb;
-  --color-accent: #545cfc;
-  --color-accent-content: #d9d1e6;
-  --color-neutral: #9b55c9;
-  --color-neutral-content: #ebddf6;
-  --color-info: #dac0eb;
-  --color-info-content: oklch(29% 0.136 325.661);
-  --color-success: #4c2864;
-  --color-success-content: #e8ecfc;
-  --color-warning: #9b55c9;
-  --color-warning-content: #e8ecfc;
-  --color-error: #8a246b;
-  --color-error-content: #e8ecfc;
-  --radius-selector: 1rem;
-  --radius-field: 1rem;
-  --radius-box: 0.25rem;
-  --size-selector: 0.28125rem;
-  --size-field: 0.21875rem;
-  --border: 1px;
-  --depth: 1;
-  --noise: 0;
+    name: "alacrity";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(98% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-primary: #281464;
+    --color-primary-content: #d9d1df;
+    --color-secondary: #701454;
+    --color-secondary-content: #e4cfdb;
+    --color-accent: #545cfc;
+    --color-accent-content: #d9d1e6;
+    --color-neutral: #9b55c9;
+    --color-neutral-content: #ebddf6;
+    --color-info: #dac0eb;
+    --color-info-content: oklch(29% 0.136 325.661);
+    --color-success: #4c2864;
+    --color-success-content: #e8ecfc;
+    --color-warning: #9b55c9;
+    --color-warning-content: #e8ecfc;
+    --color-error: #8a246b;
+    --color-error-content: #e8ecfc;
+    --radius-selector: 1rem;
+    --radius-field: 1rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.21875rem;
+    --border: 1px;
+    --depth: 1;
+      --noise:  0;
 }
 
 .custom-shape-divider-bottom-1737547199 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1737547199 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 170px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 170px;
 }
 
 .custom-shape-divider-bottom-1737547199 .shape-fill {
-@apply fill-primary
+    @apply fill-primary;
 }
 
 .custom-shape-divider-bottom-1737549060 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1737549060 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 85px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 85px;
 }
 
 .custom-shape-divider-bottom-1737549060 .shape-fill {
-
-  @apply fill-base-200
+    @apply fill-base-200;
 }
