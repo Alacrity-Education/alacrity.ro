@@ -30,7 +30,7 @@ export default function Hero() {
             href="/about"
             className="btn btn-primary btn-xl z-10 dark:shadow-xl"
           >
-            About
+            About us
           </Link>
         </div>
       </div>

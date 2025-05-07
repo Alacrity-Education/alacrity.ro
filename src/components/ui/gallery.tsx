@@ -5,8 +5,8 @@ const Gallery = () => {
   return (
     <div className="relative h-max bg-base-200 flex flex-col items-center py-10 pb-20">
       <div className="text-2xl sm:text-5xl font-semibold py-16 text-center">
-        <span className="text-white">Our Impact. </span>
-        <span className="text-purple-500">In Pictures.</span>
+        <span className="text-black dark:text-white">Our Impact. </span>
+        <span className="text-primary">In Pictures.</span>
         <br />
         <br />
         <div className="text-lg">Some pictures from our projects.</div>

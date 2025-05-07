@@ -127,7 +127,9 @@ function HistoryCard({
     <div className="relative border-l-2 w-64 sm:w-96  h-max py-4 border-black dark:border-white border-solid">
       {/* <div className="absolute h-5 w-5 rounded-full bg-black dark:bg-white -left-2 -top-2"></div> */}
       <div className="p-4">
-        <div className="badge badge-primary text-base-300">{time}</div>
+        <div className="badge badge-primary badge-sm sm:badge-md text-base-300">
+          {time}
+        </div>
         <div className="sm:text-lg pt-4">{children}</div>
       </div>
     </div>
