@@ -7,7 +7,7 @@ export default function Sponsors() {
       <h1 className="text-3xl sm:text-6xl text-center font-semibold">
         Sponsors
       </h1>
-      <div className="flex flex-col sm:flex-row  py-6 gap-2 items-center sm:justify-center">
+      <div className="flex flex-col sm:flex-row py-6 gap-2 items-center sm:justify-center">
         <SponsorCard href="http://www.rotineret.ro/" src="/sponsors/fnt.png" />
         <SponsorCard
           href="https://bambulab.com/"

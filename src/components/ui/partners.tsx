@@ -7,7 +7,7 @@ export default function Partners() {
       <h1 className="text-3xl sm:text-6xl text-center font-semibold">
         Partners
       </h1>
-      <div className="flex flex-col sm:flex-row items-center sm:justify-center">
+      <div className="flex flex-col sm:flex-row py-6 gap-2 items-center sm:justify-center">
         <PartnerCard
           href="https://www.instagram.com/robobadgers/"
           src="/partners/robo_badgers.png"
