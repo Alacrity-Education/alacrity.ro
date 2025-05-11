@@ -15,17 +15,17 @@ export default function Team() {
     },
     {
       name: "Heroiu Justinian",
-      role: "AirBox Tech Lead",
+      role: "Founder and AirBox Tech Lead",
       image: "/justin.png",
     },
     {
       name: "Alexa Gabriela",
-      role: "COO",
+      role: "Founder and COO",
       image: "/tina.jpg",
     },
     {
       name: "Sainenco Luchian",
-      role: "Tech Manager",
+      role: "Founder and Tech Manager",
       image: "/luca.png",
     },
     {

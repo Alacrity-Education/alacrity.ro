@@ -13,9 +13,15 @@ export default function Navbar() {
         <a href="https://blog.alacrity.ro" className="btn btn-ghost  ">
           Blog
         </a>
-        <Link href="/about" className="btn btn-primary ">
+        <Link href="/about" className="btn btn-ghost ">
           About
         </Link>
+        <a
+          href="https://buymeacoffee.com/alacrity_education?status=1"
+          className="btn btn-primary"
+        >
+          Donate
+        </a>
       </div>
     </div>
   );

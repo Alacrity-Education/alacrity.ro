@@ -93,9 +93,9 @@ export default function About() {
             <HistoryCard time="Mart 2025">
               <span className="text-primary font-semibold">Alacrity</span>{" "}
               obtained a sponsorship from{" "}
-              <span className="text-green-400 font-semibold">Bamboo Lab</span>.
-              A brand new 3D printer is now supporting further 3D modeling
-              courses and shared with other NGO's at{" "}
+              <span className="text-green-400 font-semibold">Bambu Lab</span>. A
+              brand new 3D printer is now supporting further 3D modeling courses
+              and shared with other NGO's at{" "}
               <span className="text-orange-400 font-bold">FNT</span>
               <br />
               <br />
