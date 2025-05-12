@@ -19,7 +19,7 @@ export default function Partners() {
         <PartnerCard
           href="www.innovailia.com"
           src="/partners/innovalia.png"
-          className="grayscale dark:invert"
+          className=""
         />
         <PartnerCard href="https://rospin.org/" src="/partners/rospin.png" />
       </div>
@@ -39,7 +39,7 @@ function PartnerCard({
   return (
     <Link href={href}>
       <Image
-        className={`object-contain h-64 w-64 p-5 ${className}`}
+        className={`object-contain h-64 w-64 p-5 bg-white ${className}`}
         src={src}
         alt={src}
         height={500}

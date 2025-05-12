@@ -45,13 +45,15 @@ export default function About() {
           <div className="w-full h-1 bg-black dark:bg-white"></div>
           <div className="flex flex-row">
             <HistoryCard time="August 2024">
-              Alacrity started as an informal group <br /> at an NGO accelarator
+              <span className="font-semibold text-primary">Alacrity</span>{" "}
+              started as an informal group <br /> at an NGO accelarator
               organised by{" "}
               <span className="text-orange-400 font-bold">FNT</span>
             </HistoryCard>
             <HistoryCard time="October 2024">
-              Alacrity was a member at{" "}
-              <span className="text-primary font-bold">FastExpo</span> by RoSpin
+              <span className="font-semibold text-primary">Alacrity</span> was a
+              member at <span className="text-primary font-bold">FastExpo</span>{" "}
+              by RoSpin
               <br />
               <br />
               <span className="text-primary font-bold">RoSpin</span> is now also
@@ -59,7 +61,8 @@ export default function About() {
               <span className="text-primary font-bold">Alacrity</span>
             </HistoryCard>
             <HistoryCard time="December 2024">
-              Alacrity was acquired the status of an NGO in just 4 months.
+              <span className="font-semibold text-primary">Alacrity</span> was
+              acquired the status of an NGO in just 4 months.
               <br />
               <br />
               The first project -{" "}
@@ -106,8 +109,14 @@ export default function About() {
               </span>
             </HistoryCard>
             <HistoryCard time="April 2025">
-              Alacrity inspired hundreds of high schoolers at{" "}
+              <span className="font-semibold text-primary">Alacrity</span>{" "}
+              inspired hundreds of high schoolers at{" "}
               <span className="text-primary font-bold">Caravana RoSpin</span>
+            </HistoryCard>
+            <HistoryCard time="May 2025">
+              <span className="font-semibold text-primary">Alacrity</span>{" "}
+              secured a great sponsorship from{" "}
+              <span className="text-blue-500 font-bold">Adonstar</span>
             </HistoryCard>
           </div>
         </div>

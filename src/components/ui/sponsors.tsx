@@ -8,11 +8,20 @@ export default function Sponsors() {
         Sponsors
       </h1>
       <div className="flex flex-col sm:flex-row py-6 gap-2 items-center sm:justify-center">
-        <SponsorCard href="http://www.rotineret.ro/" src="/sponsors/fnt.png" />
+        <SponsorCard
+          href="http://www.rotineret.ro/"
+          className=" "
+          src="/sponsors/fnt.png"
+        />
         <SponsorCard
           href="https://bambulab.com/"
-          className="grayscale dark:invert"
+          className=""
           src="/sponsors/bambu_lab.png"
+        />
+        <SponsorCard
+          href="https://andonstar.com/"
+          className=""
+          src="/sponsors/adonstar.png"
         />
       </div>
     </div>
@@ -31,7 +40,7 @@ function SponsorCard({
   return (
     <Link href={href}>
       <Image
-        className={`object-contain h-64 w-64 p-5 ${className}`}
+        className={`object-contain h-64 w-64 p-5 bg-white ${className}`}
         src={src}
         alt={src}
         height={500}
