@@ -26,12 +26,12 @@ export default function Hero() {
             60% of students don’t think their teachers are prepared to teach
             about environmental problems
           </p>
-          <Link
-            href="/about"
+          <a
+            href="https://formular230.ro/alacrity-education"
             className="btn btn-primary btn-xl z-10 dark:shadow-xl"
           >
-            About us
-          </Link>
+            Redirect 3.5%
+          </a>
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1737547199">
