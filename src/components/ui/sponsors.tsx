@@ -23,6 +23,11 @@ export default function Sponsors() {
           className=""
           src="/sponsors/adonstar.png"
         />
+        <SponsorCard
+          href="https://www.uni-trend.com/"
+          className=""
+          src="/sponsors/unit.png"
+        />
       </div>
     </div>
   );

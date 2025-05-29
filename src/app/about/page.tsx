@@ -118,6 +118,11 @@ export default function About() {
               secured a great sponsorship from{" "}
               <span className="text-blue-500 font-bold">Adonstar</span>
             </HistoryCard>
+            <HistoryCard time="May 2025">
+              <span className="font-semibold text-primary">Alacrity</span>{" "}
+              secured a sponsorship from{" "}
+              <span className="text-red-400 font-bold">UNI-T</span>
+            </HistoryCard>
           </div>
         </div>
       </div>
