@@ -72,27 +72,24 @@ const Card = ({ title, text, link, linkText, image }: CardProps) => {
 
 const TeamAndCommunity = () => {
   return (
-    <svg
-      className="h-full w-full"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      width="48"
-      height="48"
-      fill="currentColor"
-    >
-      <path d="M12 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0 2c2.67 0 8 1.34 8 4v2H4v-2c0-2.66 5.33-4 8-4zM6.5 8c0-.83.67-1.5 1.5-1.5S9.5 7.17 9.5 8 8.83 9.5 8 9.5 6.5 8.83 6.5 8zM15 9.5c-.83 0-1.5-.67-1.5-1.5S14.17 6.5 15 6.5 16.5 7.17 16.5 8 15.83 9.5 15 9.5z" />
-    </svg>
+    <Image
+      src="/raven.svg"
+      height={500}
+      width={500}
+      className="h-full w-full object-contain "
+      alt="raven"
+    />
   );
 };
 
 const DataBased = () => (
   <svg
-    className="h-full w-full"
+    className="h-full w-full invert"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     width="48"
     height="48"
-    fill="currentColor"
+    fill="white"
   >
     <path d="M12 2C7.58 2 4 4.24 4 7v10c0 2.76 3.58 5 8 5s8-2.24 8-5V7c0-2.76-3.58-5-8-5zm0 2c3.86 0 7 1.57 7 3s-3.14 3-7 3-7-1.57-7-3 3.14-3 7-3zm0 14c-3.86 0-7-1.57-7-3V9.91c1.76 1.16 4.42 1.84 7 1.84s5.24-.68 7-1.84V15c0 1.43-3.14 3-7 3z" />
   </svg>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,8 +17,8 @@ export default function Hero() {
         </div>
         <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center sm:text-start ">
-            Give a child a chance to{" "}
-            <span className="text-primary">qualitative education</span>
+            Improving the education{" "}
+            <span className="text-primary">of the future</span>
           </h1>
           <p className="py-10 sm:py-6">
             90% of romanians don’t know the metrics for measuring air quality
@@ -26,10 +27,10 @@ export default function Hero() {
             about environmental problems
           </p>
           <a
-            href="https://buymeacoffee.com/alacrity_education"
+            href="https://formular230.ro/alacrity-education"
             className="btn btn-primary btn-xl z-10 dark:shadow-xl"
           >
-            Donate
+            Redirect 3.5%
           </a>
         </div>
       </div>

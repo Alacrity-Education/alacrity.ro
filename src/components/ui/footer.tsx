@@ -23,10 +23,10 @@ export default function Footer() {
         </p>
       </aside>
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col gap-10 sm:gap-4">
           <a
             href="https://www.instagram.com/alacrity_education/"
-            className=" w-max"
+            className="h-10 w-10 sm:h-5 sm:w-5"
           >
             <Image
               src="instagram.svg"
@@ -34,6 +34,30 @@ export default function Footer() {
               width={500}
               alt="ig"
               className="h-full w-full scale-150 invert"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/alacrity-education"
+            className="h-10 w-10 sm:h-5 sm:w-5"
+          >
+            <Image
+              src="social-linkedin.svg"
+              height={500}
+              width={500}
+              alt="ig"
+              className="h-full w-full scale-200 invert"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/people/Alacrity-Education/61565652875550/"
+            className="h-10 w-10 sm:h-5 sm:w-5"
+          >
+            <Image
+              src="facebook.svg"
+              height={500}
+              width={500}
+              alt="ig"
+              className="h-full w-full scale-175 invert"
             />
           </a>
         </div>

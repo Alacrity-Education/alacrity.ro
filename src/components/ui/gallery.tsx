@@ -4,16 +4,19 @@ import Image from "next/image";
 const Gallery = () => {
   return (
     <div className="relative h-max bg-base-200 flex flex-col items-center py-10 pb-20">
-      <div className="text-2xl sm:text-5xl font-semibold py-16">
-        <span className="text-white">Visual </span>
-        <span className="text-purple-500">Gallery</span>
+      <div className="text-2xl sm:text-5xl font-semibold py-16 text-center">
+        <span className="text-black dark:text-white">Our Impact. </span>
+        <span className="text-primary">In Pictures.</span>
+        <br />
+        <br />
+        <div className="text-lg">Some pictures from our projects.</div>
       </div>
 
       <div className="w-[100vw] mx-auto z-10 relative px-4">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
           {/* Left Column */}
           <div className="flex flex-col gap-6">
-          <div className="aspect-video rounded-lg relative w-full">
+            <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/left1.jpg"
@@ -45,7 +48,7 @@ const Gallery = () => {
           {/* Middle Column */}
           <div className="flex flex-col gap-6">
             <div className="h-[calc(50%-0.75rem)] rounded-lg relative w-full">
-            <Image
+              <Image
                 alt="bg"
                 src="/galerie/middle1.jpg"
                 layout="fill"
@@ -54,7 +57,7 @@ const Gallery = () => {
               />
             </div>
             <div className="h-[calc(50%-0.75rem)] rounded-lg relative w-full">
-            <Image
+              <Image
                 alt="bg"
                 src="/galerie/middle2.jpg"
                 layout="fill"
@@ -66,7 +69,6 @@ const Gallery = () => {
 
           {/* Right Column */}
           <div className="flex flex-col gap-6">
-            
             <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
