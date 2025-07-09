@@ -4,20 +4,20 @@ export default function Hero() {
   return (
     <div className="hero bg-base-200 min-h-screen relative">
       <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse">
-        <div className="w-1/3">
+        <div className="w-1/3 ">
           <Image
             src="/logo.svg"
             alt="hero"
             width={2000}
             height={2000}
-            className="h-1/2 w-1/2 md:h-full md:w-full dark:hidden"
+            className="h-1/2  md:h-full w-full dark:hidden"
           />
           <Image
             src="/logo-dark.svg"
             alt="hero"
             width={2000}
             height={2000}
-            className="h-1/2 w-1/2 md:h-full md:w-full scale-125 hidden dark:block"
+            className="h-1/2  md:h-full w-full scale-125 hidden dark:block"
           />
         </div>
         <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
