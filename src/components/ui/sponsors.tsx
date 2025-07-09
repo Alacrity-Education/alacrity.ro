@@ -28,6 +28,11 @@ export default function Sponsors() {
           className=""
           src="/sponsors/unit.png"
         />
+        <SponsorCard
+          href="https://www.jbctools.com"
+          className=""
+          src="/sponsors/jbc.svg"
+        />
       </div>
     </div>
   );
