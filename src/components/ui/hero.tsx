@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,9 +8,16 @@ export default function Hero() {
           <Image
             src="/logo.svg"
             alt="hero"
-            width={1000}
-            height={1000}
-            className="h-1/2 w-1/2 md:h-full md:w-full dark:invert dark:saturate-0 dark:mix-blend-screen"
+            width={2000}
+            height={2000}
+            className="h-1/2 w-1/2 md:h-full md:w-full dark:hidden"
+          />
+          <Image
+            src="/logo-dark.svg"
+            alt="hero"
+            width={2000}
+            height={2000}
+            className="h-1/2 w-1/2 md:h-full md:w-full scale-125 hidden dark:block"
           />
         </div>
         <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
