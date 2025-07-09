@@ -21,7 +21,6 @@ export default function Partners() {
           src="/partners/innovalia.png"
           className=""
         />
-        <PartnerCard href="https://rospin.org/" src="/partners/rospin.png" />
       </div>
     </div>
   );

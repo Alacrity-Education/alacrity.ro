@@ -54,11 +54,6 @@ export default function About() {
               <span className="font-semibold text-primary">Alacrity</span> was a
               member at <span className="text-primary font-bold">FastExpo</span>{" "}
               by RoSpin
-              <br />
-              <br />
-              <span className="text-primary font-bold">RoSpin</span> is now also
-              collaborating with{" "}
-              <span className="text-primary font-bold">Alacrity</span>
             </HistoryCard>
             <HistoryCard time="December 2024">
               <span className="font-semibold text-primary">Alacrity</span> was
