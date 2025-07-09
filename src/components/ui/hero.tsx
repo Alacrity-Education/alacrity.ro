@@ -12,7 +12,6 @@ export default function Hero() {
             width={1000}
             height={1000}
             className="h-1/2 w-1/2 md:h-full md:w-full dark:invert dark:saturate-0 dark:mix-blend-screen"
-            layout="responsive"
           />
         </div>
         <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
@@ -28,7 +27,7 @@ export default function Hero() {
           </p>
           <a
             href="https://formular230.ro/alacrity-education"
-            className="btn btn-primary btn-xl z-10 dark:shadow-xl"
+            className="btn btn-accent md:btn-primary btn-xl z-[999] dark:shadow-xl"
           >
             Redirect 3.5%
           </a>

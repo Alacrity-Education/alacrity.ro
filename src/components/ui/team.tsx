@@ -49,12 +49,12 @@ export default function Team() {
       image: "/bianca.png",
     },
     {
-      name: "Stoica Mihai",
+      name: "Vlad",
       role: "Trainer",
       image: "/vlad.jpg",
     },
     {
-      name: "Vlad",
+      name: "Stoica Mihai",
       role: "Trainer",
       image: "/mihai.jpg",
     },
