@@ -6,6 +6,23 @@ import AirBox from "@/components/ui/airbox";
 import Gallery from "@/components/ui/gallery";
 import Sponsors from "@/components/ui/sponsors";
 import Partners from "@/components/ui/partners";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Alacrity Education",
+  description: "",
+  keywords: [
+    "Education",
+    "Science",
+    "STEAM",
+    "Soldering Station",
+    "Soldering Irons",
+    "Soldering Microscopes",
+    "Lab",
+    "Oscilloscopes",
+    "3D Printing",
+  ],
+};
 
 export default function Home() {
   return (
@@ -14,7 +31,6 @@ export default function Home() {
       <About />
       <Gallery />
       <Showcase />
-
       <AirBox />
       <Sponsors />
       <Partners />
