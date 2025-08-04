@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="w-1/3 relative -z-30 ">
           <div className=" relative z-0 shadow-2xl h-1/2 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full bg-white rounded-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
             <Image
-              src="/rotund.svg"
+              src="/logo.svg"
               alt="hero"
               width={2000}
               height={2000}
@@ -20,22 +20,26 @@ export default function Hero() {
             Improving the education{" "}
             <span className="text-primary">of the future</span>
           </h1>
-          <p className="py-10 sm:py-6 text-xl text-base-content">
-            90% of romanians don’t know the metrics for measuring air quality
+          <p className="py-10 sm:py-6 text-xl text-base-content mr-20">
+            We’re opening Romania’s first{" "}
+            <b className="text-primary">open-source STEAM</b> lab—where{" "}
+            <b className="text-primary">education </b>
+            meets <b className="text-primary">invention</b>.
             <br />
             <br />
-            60% of students don’t think their teachers are prepared to teach
-            about environmental problems
+            From air quality sensors to environmental tech, we help young minds
+            shape a <b>sustainable and intelligent future</b>.
           </p>
+
           <a
             href="https://formular230.ro/alacrity-education"
-            className="btn bg-gradient-to-tr from-accent text-white to-primary border-0 btn-xl hover:-translate-y-1 duration-500 transition-transform z-[999] dark:shadow-xl  "
+            className="btn bg-gradient-to-tr from-accent/20 text-white to-primary border-0 btn-lg hover:-translate-y-1 duration-500 transition-transform z-[999] dark:shadow-xl  "
           >
             Redirect 3.5%
           </a>
         </div>
       </div>
-      <div className="-z-10 mb-0 pb-1 !border-0  custom-shape-divider-bottom-1737547199">
+      <div className="-z-10 mb-0 pb-1 !border-0   custom-shape-divider-bottom-1737547199">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +52,7 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
-      <div className="h-screen w-screen  absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 mask-circle -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 "></div>
+      <div className="h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 mask-circle -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 "></div>
     </div>
   );
 }

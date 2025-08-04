@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Sponsors() {
   return (
     <div className="w-screen h-max py-10 ">
-      <h1 className="text-3xl sm:text-6xl text-center font-semibold">
+      <h2 className="text-3xl sm:text-6xl text-center font-semibold">
         Sponsors
-      </h1>
+      </h2>
       <div className="flex flex-col sm:flex-row py-6 gap-2 items-center sm:justify-center">
         <SponsorCard
           href="http://www.rotineret.ro/"

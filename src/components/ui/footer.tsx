@@ -14,7 +14,7 @@ export default function Footer() {
             layout="responsive"
           />
         </div>
-        <p className="font-bold pt-10">
+        <p className="font-bold ">
           Alacrity Education
           <br />
           <span className="font-normal">

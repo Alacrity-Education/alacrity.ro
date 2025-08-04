@@ -107,21 +107,21 @@ const Gallery = () => {
           >
             <path
               d="M1470.6 360C1282.95 360 1282.95 440 1095.3 440C907.65 440 907.65 360 720 360C532.35 360 532.35 440 344.7 440C157.05 440 157.05 360 -30.6 360"
-              stroke="#50247C"
+              stroke="#5863ff"
               strokeWidth="80"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M-30.6 120C157.05 120 157.05 200 344.7 200C532.35 200 532.35 120 720 120C907.65 120 908.484 200 1096.13 200C1283.78 200 1282.95 120 1470.6 120"
-              stroke="#50247C"
+              stroke="#5863ff"
               strokeWidth="80"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M1470.6 600C1282.95 600 1282.95 680 1095.3 680C907.65 680 907.65 600 720 600C532.35 600 532.35 680 344.7 680C157.05 680 157.05 600 -30.6 600"
-              stroke="#50247C"
+              stroke="#5863ff"
               strokeWidth="80"
               strokeLinecap="round"
               strokeLinejoin="round"

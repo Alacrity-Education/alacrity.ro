@@ -44,9 +44,9 @@ export default function About() {
             </div>
           </div>
           <div className="px-10">
-            <h1 className="text-2xl sm:text-3xl  md:text-6xl font-bold">
+            <h2 className="text-2xl sm:text-3xl  md:text-6xl font-bold">
               Wait, who?
-            </h1>
+            </h2>
             <p className="py-20 pt-10 text-xl max-w-sm sm:max-w-2xl">
               We are Alacrity Education, a youth-founded NGO, created by young
               people for young people, driven by the desire to promote
