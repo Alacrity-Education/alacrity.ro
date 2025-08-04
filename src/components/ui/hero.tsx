@@ -26,7 +26,6 @@ export default function Hero() {
             <b className="text-primary">education </b>
             meets <b className="text-primary">invention</b>.
             <br />
-            <br />
             From air quality sensors to environmental tech, we help young minds
             shape a <b>sustainable and intelligent future</b>.
           </p>
