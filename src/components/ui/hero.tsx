@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="hero  min-h-screen relative overflow-clip">
       <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse relative ">
-        <div className="w-1/3 relative -z-30 ">
+        <div className="w-1/3 relative -z-30 pt-10 sm:pt-0">
           <div className=" relative z-0 shadow-2xl h-1/2 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full bg-white rounded-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
             <Image
               src="/logo.svg"
@@ -20,7 +20,7 @@ export default function Hero() {
             Improving the education{" "}
             <span className="text-primary">of the future</span>
           </h1>
-          <p className="py-10 sm:py-6 text-xl text-base-content mr-20">
+          <p className="py-10 sm:py-6  md:text-xl text-base-content md:mr-20">
             We’re opening Romania’s first{" "}
             <b className="text-primary">open-source STEAM</b> lab—where{" "}
             <b className="text-primary">education </b>
