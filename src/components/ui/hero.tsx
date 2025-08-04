@@ -2,44 +2,40 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="hero  min-h-screen relative">
-      <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse">
-        <div className="w-1/3 ">
-          <Image
-            src="/logo.svg"
-            alt="hero"
-            width={2000}
-            height={2000}
-            className="h-1/2  md:h-full w-full dark:hidden"
-          />
-          <Image
-            src="/logo-dark.svg"
-            alt="hero"
-            width={2000}
-            height={2000}
-            className="h-1/2  md:h-full w-full scale-125 hidden dark:block"
-          />
+    <div className="hero  min-h-screen relative overflow-clip">
+      <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse relative ">
+        <div className="w-1/3 relative -z-30 ">
+          <div className=" relative z-0 shadow-2xl h-1/2 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full bg-white rounded-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
+            <Image
+              src="/rotund.svg"
+              alt="hero"
+              width={2000}
+              height={2000}
+              className="h-full w-full relative  "
+            />
+          </div>
         </div>
-        <div className="max-w-md relative z-10 sm:max-w-3xl flex flex-col justify-center sm:block">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center sm:text-start ">
+        <div className="max-w-md relative z-30 sm:max-w-3xl flex flex-col justify-center sm:block ">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-base-content dark:text-white sm:text-start ">
             Improving the education{" "}
             <span className="text-primary">of the future</span>
           </h1>
-          <p className="py-10 sm:py-6">
+          <p className="py-10 sm:py-6 text-xl text-base-content">
             90% of romanians don’t know the metrics for measuring air quality
+            <br />
             <br />
             60% of students don’t think their teachers are prepared to teach
             about environmental problems
           </p>
           <a
             href="https://formular230.ro/alacrity-education"
-            className="btn bg-gradient-to-tr from-accent to-primary border-0 btn-xl hover:-translate-y-1 duration-500 transition-transform z-[999] dark:shadow-xl text-white dark:text-base-content"
+            className="btn bg-gradient-to-tr from-accent text-white to-primary border-0 btn-xl hover:-translate-y-1 duration-500 transition-transform z-[999] dark:shadow-xl  "
           >
             Redirect 3.5%
           </a>
         </div>
       </div>
-      <div className="-z-10 custom-shape-divider-bottom-1737547199">
+      <div className="-z-10 mb-0 pb-1 !border-0  custom-shape-divider-bottom-1737547199">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +48,7 @@ export default function Hero() {
           ></path>
         </svg>
       </div>
+      <div className="h-screen w-screen  absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 mask-circle -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 "></div>
     </div>
   );
 }

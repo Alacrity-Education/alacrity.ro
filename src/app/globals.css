@@ -10,9 +10,9 @@
     --color-base-200: #160e1e;
     --color-base-300: #110a18;
     --color-base-content: #ccc9cf;
-    --color-primary: var(--color-purple-500);
+    --color-primary: #5863ff;
     --color-primary-content: #e4d8ee;
-    --color-secondary: var(--color-pink-500);
+    --color-secondary: #5863ff;
     --color-secondary-content: var(--color-base-100);
     --color-accent: #50247c;
     --color-accent-content: #d9d1e6;

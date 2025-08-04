@@ -11,52 +11,52 @@ export default function Team() {
     {
       name: "Vavilov Iris",
       role: "Founder and CEO",
-      image: "/iris.jpg",
+      image: "/team/iris.jpg",
     },
     {
       name: "Heroiu Justinian",
-      role: "Founder and AirBox Tech Lead",
-      image: "/justin.png",
+      role: "Founder and Head of Research",
+      image: "/team/justin.png",
     },
     {
       name: "Alexa Gabriela",
       role: "Founder and COO",
-      image: "/tina.jpg",
+      image: "/team/tina.jpg",
     },
     {
       name: "Sainenco Luchian",
-      role: "Founder and Tech Manager",
-      image: "/luca.png",
+      role: "Founder and Head of Technology",
+      image: "/team/luca.png",
     },
     {
       name: "Mușel Răzvan",
       role: "Project Manager",
-      image: "/musel.jpg",
+      image: "/team/musel.jpg",
     },
     {
       name: "Ionescu Andrei",
       role: "Software Developer",
-      image: "/stefan.jpg",
+      image: "/team/stefan.jpg",
     },
     {
       name: "Druică Adina",
       role: "Graphic Designer",
-      image: "/adina.jpg",
+      image: "/team/adina.jpg",
     },
     {
       name: "Sima Bianca",
       role: "Student Researcher",
-      image: "/bianca.png",
+      image: "/team/bianca.png",
     },
     {
       name: "Vlad",
       role: "Trainer",
-      image: "/vlad.jpg",
+      image: "/team/vlad.jpg",
     },
     {
       name: "Stoica Mihai",
       role: "Trainer",
-      image: "/mihai.jpg",
+      image: "/team/mihai.jpg",
     },
   ];
 

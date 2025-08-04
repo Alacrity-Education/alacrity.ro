@@ -17,7 +17,7 @@ export default function Partners() {
           src="/partners/fils.jpg"
         />
         <PartnerCard
-          href="www.innovailia.com"
+          href="https://www.innovailia.com"
           src="/partners/innovalia.png"
           className=""
         />
