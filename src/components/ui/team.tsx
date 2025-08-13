@@ -15,7 +15,7 @@ export default function Team() {
     },
     {
       name: "Heroiu Justinian",
-      role: "Founder and Head of Research",
+      role: "Founder and Research lead.",
       image: "/team/justin.png",
     },
     {
@@ -25,7 +25,7 @@ export default function Team() {
     },
     {
       name: "Sainenco Luchian",
-      role: "Founder and Head of Technology",
+      role: "Founder and CTO",
       image: "/team/luca.png",
     },
     {
@@ -49,9 +49,9 @@ export default function Team() {
       image: "/team/bianca.png",
     },
     {
-      name: "Vlad",
-      role: "Trainer",
-      image: "/team/vlad.jpg",
+      name: "Tudor Zgîmbău",
+      role: "Chief Economist",
+      image: "/team/tudor.jpeg",
     },
     {
       name: "Stoica Mihai",
