@@ -44,7 +44,7 @@ function PartnerCard({
       <Image
         className={`object-contain h-64 w-64 p-5 bg-white ${className}`}
         src={src}
-        alt={src}
+        alt={alt}
         height={500}
         width={500}
       />
