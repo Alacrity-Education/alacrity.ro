@@ -8,7 +8,7 @@ export default function Hero() {
           <div className=" relative z-0 shadow-2xl h-1/2 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full bg-white rounded-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
             <Image
               src="/logo.svg"
-              alt="hero"
+              alt="Alacrity Education Logo"
               width={2000}
               height={2000}
               className="h-full w-full relative  "

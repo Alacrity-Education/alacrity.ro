@@ -29,6 +29,15 @@ export async function generateMetadata({
       description: t("openGraph.description"),
       url: "https://www.alacrity.education",
       type: "website",
+      images: [
+        {
+          url: "https://alacrity.education/logo.svg",
+          width: 512,
+          height: 512,
+          alt: "Alacrity Education logo",
+          type: "image/svg+xml",
+        },
+      ],
       siteName: t("openGraph.siteName"),
     },
     description: t("description"),

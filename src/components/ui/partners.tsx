@@ -11,15 +11,17 @@ export default function Partners() {
         <PartnerCard
           href="https://www.instagram.com/robobadgers/"
           src="/partners/robo_badgers.png"
+          alt="RoboBadgers robotics team"
         />
         <PartnerCard
           href="https://fils.upb.ro/ro/home/"
           src="/partners/fils.jpg"
+          alt="Faculty of Engineering in Foreign Languages"
         />
         <PartnerCard
           href="https://www.innovailia.com"
           src="/partners/innovalia.png"
-          className=""
+          alt="Innovalia"
         />
       </div>
     </div>
@@ -30,10 +32,12 @@ function PartnerCard({
   src,
   className,
   href,
+  alt,
 }: {
   src: string;
   className?: string;
   href: string;
+  alt: string;
 }) {
   return (
     <Link href={href}>

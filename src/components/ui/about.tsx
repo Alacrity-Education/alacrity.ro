@@ -30,7 +30,7 @@ export default function About() {
                 className="h-full w-full object-cover rounded-lg"
                 height={300}
                 width={300}
-                alt="image-1"
+                alt="Prototyping of Alacrity Airbox"
               />
             </div>
             <div className="h-80 w-full rounded-lg shadow-xl">
@@ -39,12 +39,12 @@ export default function About() {
                 className="h-full w-full object-cover rounded-lg"
                 height={300}
                 width={300}
-                alt="image-1"
+                alt="The first oficial preparation for Alacrity Airbox"
               />
             </div>
           </div>
           <div className="px-10">
-            <h2 className="text-2xl sm:text-3xl  md:text-6xl font-bold">
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold">
               Wait, who?
             </h2>
             <p className="py-20 pt-10 text-xl max-w-sm sm:max-w-2xl">
