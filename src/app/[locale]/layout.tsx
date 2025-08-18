@@ -69,7 +69,7 @@ export default async function RootLayout({
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+              __html: JSON.stringify(ld).replace(/</g, "\\u003c"),
             }}
           />
         </NextIntlClientProvider>
