@@ -53,9 +53,9 @@ export default function About() {
               high-quality STEAM (Science, Technology, Engineering, Arts and
               Mathematics) education.
             </p>
-            <h1 className="text-2xl font-semibold pt-5">
+            <h2 className="text-2xl font-semibold pt-5">
               Not just keyboard warriors
-            </h1>
+            </h2>
             <p className="py-20 pt-5 text-xl">
               Our goal is to advocate for quality education and promote it in
               the most practical and pragmatic way possible. We don't want to
@@ -66,7 +66,7 @@ export default function About() {
           </div>
         </div>
         <Link href="/about" className="btn btn-xl btn-primary">
-          Read More
+          Check out Alacrity's history!
         </Link>
       </div>
       <div className="custom-shape-divider-bottom-1737549060">

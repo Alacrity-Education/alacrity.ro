@@ -1,0 +1,128 @@
+{
+  "en": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Alacrity Education",
+    "legalName": "Alacrity Education",
+    "alternateName": "Alacrity",
+    "description": "We are building Romania’s first open-source education lab. From AirBox to environmental innovation, Alacrity empowers students and educators through hands-on, high-impact STEAM learning.",
+    "url": "https://alacrity.education",
+    "logo": "https://alacrity.education/logo.svg",
+    "additionalType": "https://schema.org/NGO",
+    "sameAs": [
+      "https://www.instagram.com/alacrity_education/",
+      "https://www.linkedin.com/company/alacrity-education",
+      "https://www.facebook.com/people/Alacrity-Education/61565652875550/"
+    ],
+    "nonprofitStatus": "Nonprofit",
+    "knowsAbout": [
+      "education",
+      "digital fundraising",
+      "treasure hunt events",
+      "opensouce laboratory"
+    ],
+    "areaServed": "Worldwide",
+    "funding": [
+      {
+        "@type": "Grant",
+        "name": "Microsoft grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "Microsoft"
+        }
+      },
+      {
+        "@type": "Grant",
+        "name": "Google grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "Google"
+        }
+      },
+      {
+        "@type": "Grant",
+        "name": "ING Hubs grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "ING Hubs"
+        }
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "general",
+        "telephone": "+00-000-000-000",
+        "email": "contact@alacrity.ro",
+        "availableLanguage": ["en", "ro", "ru"]
+      }
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://your-site.example"
+    }
+  },
+  "ro": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Alacrity Education",
+    "legalName": "Alacrity Education",
+    "alternateName": "Alacrity",
+    "description": "We are building Romania’s first open-source education lab. From AirBox to environmental innovation, Alacrity empowers students and educators through hands-on, high-impact STEAM learning.",
+    "url": "https://alacrity.education",
+    "logo": "https://alacrity.education/logo.svg",
+    "additionalType": "https://schema.org/NGO",
+    "sameAs": [
+      "https://www.instagram.com/alacrity_education/",
+      "https://www.linkedin.com/company/alacrity-education",
+      "https://www.facebook.com/people/Alacrity-Education/61565652875550/"
+    ],
+    "nonprofitStatus": "Nonprofit",
+    "knowsAbout": [
+      "education",
+      "digital fundraising",
+      "treasure hunt events",
+      "opensouce laboratory"
+    ],
+    "areaServed": "Worldwide",
+    "funding": [
+      {
+        "@type": "Grant",
+        "name": "Microsoft grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "Microsoft"
+        }
+      },
+      {
+        "@type": "Grant",
+        "name": "Google grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "Google"
+        }
+      },
+      {
+        "@type": "Grant",
+        "name": "ING Hubs grant",
+        "funder": {
+          "@type": "Organization",
+          "name": "ING Hubs"
+        }
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "general",
+        "telephone": "+00-000-000-000",
+        "email": "contact@alacrity.ro",
+        "availableLanguage": ["en", "ro", "ru"]
+      }
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://your-site.example"
+    }
+  }
+}
