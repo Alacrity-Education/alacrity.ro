@@ -21,6 +21,21 @@
       "treasure hunt events",
       "opensouce laboratory"
     ],
+    "geo":{
+      "@type":"GeoCoordinates",
+      "latitude":44.444,
+      "longitude":26.093
+    },
+    "image": "https://alacrity.education/logo.png",
+      "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calea Victoriei 142-148",
+    "addressLocality": "Bucharest",
+    "postalCode": "010095",
+    "addressCountry": "RO"
+  },
+    "telephone": "+40-736-382-448",
+  "openingHours": "Mo-Fr 09:00-18:00",
     "areaServed": "Worldwide",
     "funding": [
       {
@@ -59,7 +74,7 @@
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://your-site.example"
+      "@id": "https://alacrity.education"
     }
   },
   "ro": {
@@ -84,6 +99,21 @@
       "treasure hunt events",
       "opensouce laboratory"
     ],
+     "geo":{
+      "@type":"GeoCoordinates",
+      "latitude":44.444,
+      "longitude":26.093
+    },
+    "image": "https://alacrity.education/logo.png",
+      "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calea Victoriei 142-148",
+    "addressLocality": "Bucharest",
+    "postalCode": "010095",
+    "addressCountry": "RO"
+  },
+    "telephone": "+40-736-382-448",
+  "openingHours": "Mo-Fr 09:00-18:00",
     "areaServed": "Worldwide",
     "funding": [
       {
@@ -122,7 +152,7 @@
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://your-site.example"
+      "@id": "https://alacrity.education"
     }
   }
 }

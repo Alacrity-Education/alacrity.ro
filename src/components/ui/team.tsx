@@ -1,64 +1,22 @@
 import Image from "next/image";
+import { Suspense } from "react";
 
 interface TeamMember {
   name: string;
-  role: string;
-  image?: string;
+  title: string;
+  photoUrl?: string;
+  id:number;
 }
 
-export default function Team() {
-  const members: TeamMember[] = [
-    {
-      name: "Vavilov Iris",
-      role: "Founder and CEO",
-      image: "/team/iris.jpg",
-    },
-    {
-      name: "Heroiu Justinian",
-      role: "Founder and Research lead.",
-      image: "/team/justin.png",
-    },
-    {
-      name: "Alexa Gabriela",
-      role: "Founder and COO",
-      image: "/team/tina.jpg",
-    },
-    {
-      name: "Sainenco Luchian",
-      role: "Founder and CTO",
-      image: "/team/luca.png",
-    },
-    {
-      name: "Mușel Răzvan",
-      role: "Project Manager",
-      image: "/team/musel.jpg",
-    },
-    {
-      name: "Ionescu Andrei",
-      role: "Software Developer",
-      image: "/team/stefan.jpg",
-    },
-    {
-      name: "Druică Adina",
-      role: "Graphic Designer",
-      image: "/team/adina.jpg",
-    },
-    {
-      name: "Sima Bianca",
-      role: "Student Researcher",
-      image: "/team/bianca.png",
-    },
-    {
-      name: "Tudor Zgîmbău",
-      role: "Chief Economist",
-      image: "/team/tudor.jpeg",
-    },
-    {
-      name: "Stoica Mihai",
-      role: "Trainer",
-      image: "/team/mihai.jpg",
-    },
-  ];
+
+export default async function Team() {
+
+  const members: TeamMember[] = ((await fetch(process.env.WORKSPACE_MEMBERS_URL || "",{ next: { revalidate: 600 } }).then(res => res.json())).users as TeamMember[]).map(
+    member => {
+      member.photoUrl = `/api/photo?user=${encodeURIComponent(String(member.id))}`
+      return member;
+    }
+  );
 
   return (
     <div className="h-max bg-base-200 flex flex-col items-center py-10 ">
@@ -66,7 +24,10 @@ export default function Team() {
         Meet the team behind <span className="text-primary">Alacrity</span>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-2">
-        {members.map((member, index) => (
+         {members.filter((member)=> member.title && member.title.includes("Founder")).map((member, index) => (
+          <TeamMember key={index} {...member} />
+        ))}
+        {members.filter((member)=> !member.title || !member.title.includes("Founder")).map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
       </div>
@@ -74,22 +35,37 @@ export default function Team() {
   );
 }
 
-const TeamMember = ({ name, role, image }: TeamMember) => {
+const TeamMember = ({ name, title, photoUrl }: TeamMember) => {
   return (
+ 
     <div className="h-64 w-40 md:h-64 md:w-64 p-4 flex flex-col gap-2 items-center justify-center">
       <div className="avatar">
-        <div className="w-32 h-32 rounded">
+        <div className="w-32 h-32 rounded  relative">
+
           <Image
-            src={image || "/Falcon.svg"}
+            loading="lazy"
+            src={photoUrl || "/Falcon.svg"}
             height={500}
             width={500}
             alt={name}
-            className="h-full w-full object-cover"
+              placeholder="blur"
+          blurDataURL="/Falcon.svg"
+            className="h-full w-full object-cover absolute z-10"
           />
+        <Image alt="falcon" height={500} width={500} className="h-full w-full object-cover relative " src="/Falcon.svg"/>
         </div>
       </div>
-      <div className="text-sm sm:text-lg font-bold">{name}</div>
-      <div className="text-xs sm:text-sm">{role}</div>
+      <div className="text-sm sm:text-md font-bold text-center">{name}</div>
+      <div className="text-xs sm:text-sm">{title || "volunteer"}</div>
     </div>
+   
   );
 };
+
+const ImageLoading = ()=>{
+  return(
+    <div className="h-full w-full animate-pulse ">
+      
+    </div>
+  )
+}

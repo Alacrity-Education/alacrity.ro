@@ -4,12 +4,16 @@ import "@/app/globals.css";
 import Navbar from "@/components/ui/nav";
 import Footer from "@/components/ui/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import jsonLd from "@/app/json-ld.json";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
 
 export async function generateMetadata({
   params,
@@ -64,6 +68,8 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const ld = jsonLd[locale];
 
