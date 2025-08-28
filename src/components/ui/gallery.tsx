@@ -20,27 +20,27 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/left1.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+                height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
             <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/left2.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+                  height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
             <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/left3.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
           </div>
@@ -51,18 +51,18 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/middle1.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
             <div className="h-[calc(50%-0.75rem)] rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/middle2.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
           </div>
@@ -73,27 +73,27 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/right1.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
             <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/right2.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
             <div className="aspect-video rounded-lg relative w-full">
               <Image
                 alt="bg"
                 src="/galerie/right3.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg"
+               height={1000}
+                width={1000}
+                className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
           </div>
