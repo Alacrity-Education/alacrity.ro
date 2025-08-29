@@ -35,7 +35,7 @@ export default async function Team() {
 
 async function getUserPhoto(userId: number | string) {
   const res = await fetch(`${process.env.WORKSPACE_MEMBERS_URL}?photoUser=${userId}`,{next:{revalidate:600}});
-  if (!res.ok) return '/fallback-photo.png'; // Fallback to a static image if error
+  if (!res.ok) return '/Falcon.svg'; // Fallback to a static image if error
   const { data, contentType } = await res.json();
   if(!data)
     return "/Falcon.svg"
@@ -69,11 +69,3 @@ const TeamMember = async ({id, name, title, photoUrl }: TeamMember) => {
    
   );
 };
-
-const ImageLoading = ()=>{
-  return(
-    <div className="h-full w-full animate-pulse ">
-      
-    </div>
-  )
-}
