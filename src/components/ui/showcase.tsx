@@ -13,7 +13,7 @@ const Showcase = () => {
       title: "Team and Community",
       text: `We are a team of 10 professionals
 with modern visions, motivated to
-provide fair access to qualitative
+provide fair access to quality
 education.`,
       image: <TeamAndCommunity />,
     },
@@ -28,7 +28,7 @@ communities we work with.`,
     },
     {
       title: "Non Profit",
-      text: `Access to qualitative education,
+      text: `Access to quality education,
 no matter your income, should be
 a human right. We are striving to
 achieve that in our NGO.`,
