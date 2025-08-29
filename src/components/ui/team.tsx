@@ -9,14 +9,12 @@ interface TeamMember {
 }
 
 
+
+
 export default async function Team() {
 
-  const members: TeamMember[] = ((await fetch(process.env.WORKSPACE_MEMBERS_URL || "",{ next: { revalidate: 600 } }).then(res => res.json())).users as TeamMember[]).map(
-    member => {
-      member.photoUrl = `/api/photo?user=${encodeURIComponent(String(member.id))}`
-      return member;
-    }
-  );
+  const members: TeamMember[] = ((await fetch(process.env.WORKSPACE_MEMBERS_URL || "",{ next: { revalidate: 600 } }).then(res => res.json())).users as TeamMember[])
+
 
   return (
     <div className="h-max bg-base-200 flex flex-col items-center py-10 ">
@@ -35,7 +33,17 @@ export default async function Team() {
   );
 }
 
-const TeamMember = ({ name, title, photoUrl }: TeamMember) => {
+async function getUserPhoto(userId: number | string) {
+  const res = await fetch(`${process.env.WORKSPACE_MEMBERS_URL}?photoUser=${userId}`,{next:{revalidate:600}});
+  if (!res.ok) return '/fallback-photo.png'; // Fallback to a static image if error
+  const { data, contentType } = await res.json();
+  if(!data)
+    return "/Falcon.svg"
+  return `data:${contentType};base64,${data}`;
+}
+
+const TeamMember = async ({id, name, title, photoUrl }: TeamMember) => {
+  const imageUrl = await getUserPhoto(id)
   return (
  
     <div className="h-64 w-40 md:h-64 md:w-64 p-4 flex flex-col gap-2 items-center justify-center">
@@ -44,9 +52,9 @@ const TeamMember = ({ name, title, photoUrl }: TeamMember) => {
 
           <Image
             loading="lazy"
-            src={photoUrl || "/Falcon.svg"}
-            height={500}
-            width={500}
+            src={imageUrl || "/Falcon.svg"}
+            height={1000}
+            width={1000}
             alt={name}
               placeholder="blur"
           blurDataURL="/Falcon.svg"
