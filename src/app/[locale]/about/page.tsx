@@ -104,18 +104,38 @@ export default function About() {
               <b className="font-semibold text-primary">Alacrity</b> secured a
               great sponsorship from{" "}
               <b className="text-blue-500 font-bold">Adonstar</b>
-            </HistoryCard>
-            <HistoryCard time="May 2025">
+              <br />
+              <br />
               <b className="font-semibold text-primary">Alacrity</b> is building
               the first OpenSource lab in Romania!
               <br />
               <br />
               <b className="font-semibold text-primary">Alacrity</b> secured a
               sponsorship from <b className="text-red-400 font-bold">UNI-T</b>
+              <br />
+              <br />
+              We participtated at
+              <b className="text-red-400 font-bold"> Baret Scholars Graduation</b>
             </HistoryCard>
             <HistoryCard time="June 2025">
               <b className="font-semibold text-primary">Alacrity</b> secured a
               sponsorship from <b className="text-red-600 font-bold">JBC</b>
+
+            </HistoryCard>
+             <HistoryCard time="July 2025">
+              <b className="font-semibold text-primary">Alacrity</b> organisez a science collage workshop.
+              <br/>
+              <br/>
+              We started researching <b>microplastics</b>.
+            </HistoryCard>
+            <HistoryCard time="August 2025">
+              <b className="font-semibold text-primary">Alacrity</b> was a member of <b>Robotics for all</b> by <b className="text-red-400 font-bold">Boogeybots</b>
+            </HistoryCard>
+            <HistoryCard time="September 2025">
+              <b className="font-semibold text-primary">Alacrity</b> secured a partnership with <b className="text-yellow-500 font-semibold">Magurele Science Park</b>
+              <br/>
+              <br/>
+              We started researching the <b>financial needs of the youth</b>.
             </HistoryCard>
           </div>
         </div>
