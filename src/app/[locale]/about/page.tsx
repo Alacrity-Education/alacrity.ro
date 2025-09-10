@@ -15,8 +15,7 @@ export default function About() {
           </p>
           <p className="sm:text-lg pt-4">
             Our history is rooted in{" "}
-            <span className="font-semibold text-primary">STEAM</span>
-            —Science, Technology, Engineering, Arts, and Mathematics. But more
+            <span className="font-semibold text-primary">STEAM</span>, Science, Technology, Engineering, Arts, and Mathematics. But more
             than that, we are a team of passionate educators, innovators, and
             learners committed to shaping a better future.
           </p>

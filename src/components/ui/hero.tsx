@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
           <p className="py-10 sm:py-6  md:text-xl text-base-content md:mr-20">
             We’re opening Romania’s first{" "}
-            <b className="text-primary">open-source STEAM</b> lab—where{" "}
+            <b className="text-primary">open-source STEAM</b> lab, where{" "}
             <b className="text-primary">education </b>
             meets <b className="text-primary">invention</b>.
             <br />
