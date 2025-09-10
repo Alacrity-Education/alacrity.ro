@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Partners() {
   return (
-    <div className="w-screen h-max py-10 ">
+    <div className="w-screen h-max py-10 flex flex-col items-center">
       <h2 className="text-3xl sm:text-6xl text-center font-semibold">
         Partners
       </h2>
-      <div className="flex flex-col sm:flex-row py-6 gap-2 items-center sm:justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row py-6 gap-2 items-center px-10">
         <PartnerCard
           href="https://www.instagram.com/robobadgers/"
           src="/partners/robo_badgers.png"
@@ -42,7 +42,7 @@ function PartnerCard({
   return (
     <Link href={href}>
       <Image
-        className={`object-contain h-64 w-64 p-5 bg-white ${className}`}
+        className={`object-contain w-32 h-32  sm:h-64 sm:w-64 p-5 bg-white ${className}`}
         src={src}
         alt={alt}
         height={500}
