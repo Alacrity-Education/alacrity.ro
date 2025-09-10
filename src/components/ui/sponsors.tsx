@@ -15,11 +15,24 @@ export default function Sponsors() {
           src="/sponsors/fnt.png"
         />
         <SponsorCard
+          href="https://fundatiacomunitarabucuresti.ro/"
+          className=""
+          alt="Fundatia Comunitara Bucuresti"
+          src="/sponsors/fundatiacomunitara.png"
+        />
+          <SponsorCard
+          href="https://educlick.ro/"
+          className=""
+          alt="EduClick Sponsorizare Calculatoare"
+          src="/sponsors/educlick.png"
+        />
+        <SponsorCard
           href="https://bambulab.com/"
           className=""
           alt="Bambulab"
           src="/sponsors/bambu_lab.png"
         />
+       
         <SponsorCard
           href="https://andonstar.com/"
           className=""

@@ -14,6 +14,11 @@ export default function Partners() {
           alt="RoboBadgers robotics team"
         />
         <PartnerCard
+          href="https://magurelesciencepark.ro/"
+          src="/partners/msp.png"
+          alt="Magurele Science Park"
+        />
+        <PartnerCard
           href="https://fils.upb.ro/ro/home/"
           src="/partners/fils.jpg"
           alt="Faculty of Engineering in Foreign Languages"
