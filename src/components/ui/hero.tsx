@@ -31,10 +31,10 @@ export default function Hero() {
           </p>
 
           <a
-            href="https://formular230.ro/alacrity-education"
+            href="https://buymeacoffee.com/alacrity_education?ref=alacrity.education"
             className="btn bg-gradient-to-tr from-accent/20 text-white to-primary border-0 btn-lg hover:-translate-y-1 duration-500 transition-transform z-[999] dark:shadow-xl  "
           >
-            Redirect 3.5%
+            Donate for our lab!
           </a>
         </div>
       </div>
