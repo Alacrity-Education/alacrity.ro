@@ -21,7 +21,7 @@ export default function About() {
           className="absolute w-full h-full -left-1/3 top-1/3 scale-[2] mix-blend-overlay dark:mix-blend-normal opacity-70"
         />
       </div>
-      <div className="pt-20 flex flex-col w-full items-center gap-10 z-10">
+      <div className="pt-20 flex flex-col w-full items-center gap-10 z-10 py-10">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse ">
           <div className="basis-2/3 flex gap-10 justify-center h-full flex-col">
             <div className="h-80 w-full rounded-lg shadow-xl">
@@ -65,7 +65,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <Link href="/about" className="btn btn-xl btn-primary">
+        <Link href="/about" className="btn  sm:btn-xl btn-primary -translate-y-3 hover:translate-x-1 hover:-translate-y-4 transition-all duration-300">
           Check out Alacrity's history!
         </Link>
       </div>

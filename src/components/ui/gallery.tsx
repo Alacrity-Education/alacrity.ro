@@ -13,7 +13,7 @@ const Gallery = () => {
       </div>
 
       <div className="w-[100vw] mx-auto z-10 relative px-4">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 sm:gap-6 relative z-10">
           {/* Left Column */}
           <div className="flex flex-col gap-6">
             <div className="aspect-video rounded-lg relative w-full">

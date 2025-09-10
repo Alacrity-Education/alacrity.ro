@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-
+import Link from "next/link";
 export default function About() {
   return (
     <>
-      <div className="min-h-screen flex bg-base-200 flex-col sm:flex-row justify-center items-center">
+      <div className="min-h-screen flex bg-base-200 flex-col sm:flex-row justify-center items-center relative">
+        <BackToHome />
         <div className="sm:basis-1/2 px-4 sm:pl-20 lg:pl-40 xl:pl-80 pt-10 sm:pt-20 ">
           <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl pt-10 font-bold">
             Hi, <br /> we're <b className="text-primary">Alacrity</b>
@@ -121,6 +122,14 @@ export default function About() {
       </div>
     </>
   );
+}
+
+function BackToHome(){
+  return(
+    <Link href="/" className="fixed top-20 right-5 sm:top-25 sm:left-5 backgrop-blur-xl h-10 w-10 z-10 border-2 rounded-sm bg-base-100 shadow-lg hover:bg-primary/20 active:bg-black">
+      <Image height={100} width={100} alt="back btn" src="/back.svg" className="object-contain h-full w-full dark:invert "/>
+    </Link>
+  )
 }
 
 function HistoryCard({
