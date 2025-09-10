@@ -122,10 +122,10 @@ export default function About() {
 
             </HistoryCard>
              <HistoryCard time="July 2025">
-              <b className="font-semibold text-primary">Alacrity</b> organisez a science collage workshop.
+              <b className="font-semibold text-primary">Alacrity</b> organizes a science collage workshop.
               <br/>
               <br/>
-              We started researching <b>microplastics</b>.
+              We started researching <b>microplastics in students' food</b>.
             </HistoryCard>
             <HistoryCard time="August 2025">
               <b className="font-semibold text-primary">Alacrity</b> was a member of <b>Robotics for all</b> by <b className="text-red-400 font-bold">Boogeybots</b>
