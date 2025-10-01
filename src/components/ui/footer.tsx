@@ -5,19 +5,19 @@ export default function Footer() {
     {
       name: "alacrity-instagram",
       href: "https://www.instagram.com/alacrity_education/",
-      src: "instagram.svg",
+      src: "/instagram.svg",
       scale: "scale-150",
     },
     {
       name: "alacrity-linkedin",
       href: "https://www.linkedin.com/company/alacrity-education",
-      src: "social-linkedin.svg",
+      src: "/social-linkedin.svg",
       scale: "scale-200",
     },
     {
       name: "alacrity-facebook",
       href: "https://www.facebook.com/people/Alacrity-Education/61565652875550/",
-      src: "facebook.svg",
+      src: "/facebook.svg",
       scale: "scale-175",
     },
   ];

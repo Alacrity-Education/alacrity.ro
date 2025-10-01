@@ -15,9 +15,10 @@ export default function About() {
           </p>
           <p className="sm:text-lg pt-4">
             Our history is rooted in{" "}
-            <span className="font-semibold text-primary">STEAM</span>, Science, Technology, Engineering, Arts, and Mathematics. But more
-            than that, we are a team of passionate educators, innovators, and
-            learners committed to shaping a better future.
+            <span className="font-semibold text-primary">STEAM</span>, Science,
+            Technology, Engineering, Arts, and Mathematics. But more than that,
+            we are a team of passionate educators, innovators, and learners
+            committed to shaping a better future.
           </p>
           <h2 className="text-lg mt-2">
             Explore our journey of impact since{" "}
@@ -40,8 +41,8 @@ export default function About() {
           A brief History
         </h1>
       </div>
-      <div className="relative min-h-max bg-base-200 flex flex-col items-start overflow-x-auto">
-        <div className="relative w-max min-w-screen h-96 px-10">
+      <div className="relative h-max bg-base-200 flex flex-col items-start overflow-x-scroll">
+        <div className="relative w-max min-w-screen h-max px-10">
           <div className="w-full h-1 bg-black dark:bg-white"></div>
           <div className="flex flex-row">
             <HistoryCard time="August 2024">
@@ -114,26 +115,35 @@ export default function About() {
               <br />
               <br />
               We participtated at
-              <b className="text-red-400 font-bold"> Baret Scholars Graduation</b>
+              <b className="text-red-400 font-bold">
+                {" "}
+                Baret Scholars Graduation
+              </b>
             </HistoryCard>
             <HistoryCard time="June 2025">
               <b className="font-semibold text-primary">Alacrity</b> secured a
               sponsorship from <b className="text-red-600 font-bold">JBC</b>
-
             </HistoryCard>
-             <HistoryCard time="July 2025">
-              <b className="font-semibold text-primary">Alacrity</b> organizes a science collage workshop.
-              <br/>
-              <br/>
+            <HistoryCard time="July 2025">
+              <b className="font-semibold text-primary">Alacrity</b> organizes a
+              science collage workshop.
+              <br />
+              <br />
               We started researching <b>microplastics in students' food</b>.
             </HistoryCard>
             <HistoryCard time="August 2025">
-              <b className="font-semibold text-primary">Alacrity</b> was a member of <b>Robotics for all</b> by <b className="text-red-400 font-bold">Boogeybots</b>
+              <b className="font-semibold text-primary">Alacrity</b> was a
+              member of <b>Robotics for all</b> by{" "}
+              <b className="text-red-400 font-bold">Boogeybots</b>
             </HistoryCard>
             <HistoryCard time="September 2025">
-              <b className="font-semibold text-primary">Alacrity</b> secured a partnership with <b className="text-yellow-500 font-semibold">Magurele Science Park</b>
-              <br/>
-              <br/>
+              <b className="font-semibold text-primary">Alacrity</b> secured a
+              partnership with{" "}
+              <b className="text-yellow-500 font-semibold">
+                Magurele Science Park
+              </b>
+              <br />
+              <br />
               We started researching the <b>financial needs of the youth</b>.
             </HistoryCard>
           </div>
@@ -143,12 +153,21 @@ export default function About() {
   );
 }
 
-function BackToHome(){
-  return(
-    <Link href="/" className="fixed top-20 right-5 sm:top-25 sm:left-5 backgrop-blur-xl h-10 w-10 z-10 border-2 rounded-sm bg-base-100 shadow-lg hover:bg-primary/20 active:bg-black">
-      <Image height={100} width={100} alt="back btn" src="/back.svg" className="object-contain h-full w-full dark:invert "/>
+function BackToHome() {
+  return (
+    <Link
+      href="/"
+      className="fixed top-20 right-5 sm:top-25 sm:left-5 backgrop-blur-xl h-10 w-10 z-10 border-2 rounded-sm bg-base-100 shadow-lg hover:bg-primary/20 active:bg-black"
+    >
+      <Image
+        height={100}
+        width={100}
+        alt="back btn"
+        src="/back.svg"
+        className="object-contain h-full w-full dark:invert "
+      />
     </Link>
-  )
+  );
 }
 
 function HistoryCard({
