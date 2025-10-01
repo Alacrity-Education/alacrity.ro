@@ -20,8 +20,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/left1.jpg"
-                height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -29,8 +29,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/left2.jpg"
-                  height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -38,8 +38,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/left3.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -51,8 +51,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/middle1.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -60,8 +60,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/middle2.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -73,8 +73,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/right1.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -82,8 +82,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/right2.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>
@@ -91,8 +91,8 @@ const Gallery = () => {
               <Image
                 alt="bg"
                 src="/galerie/right3.jpg"
-               height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className="absolute w-full h-full left-0 top-0 scale-100 mix-blend-overlay dark:mix-blend-normal rounded-lg object-cover"
               />
             </div>

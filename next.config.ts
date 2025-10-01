@@ -5,19 +5,19 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'googleusercontent.com',
-        pathname: '/profile/picture/0**',
+        protocol: "http",
+        hostname: "googleusercontent.com",
+        pathname: "/profile/picture/0**",
       },
       {
-        protocol: 'http',
-        hostname: 'googleusercontent.com',
-        pathname: '/profile/picture/1**',
+        protocol: "http",
+        hostname: "googleusercontent.com",
+        pathname: "/profile/picture/1**",
       },
       {
-        protocol: 'https',
-        hostname: 'script.google.com',
-        pathname: '/**', // This will allow any path from this host
+        protocol: "https",
+        hostname: "script.google.com",
+        pathname: "/**", // This will allow any path from this host
       },
     ],
   },
