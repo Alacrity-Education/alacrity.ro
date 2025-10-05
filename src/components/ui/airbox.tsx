@@ -1,6 +1,6 @@
 export default function AirBox() {
   return (
-    <div className=" relative h-max bg-base-200 flex flex-col items-center py-20 ">
+    <div className=" z-20 relative h-max bg-base-200 flex flex-col items-center py-20 ">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l dark:from-primary via-base-200 dark:to-primary from-neutral to-neutral opacity-10 md:opacity-20 brightness-150 hidden md:block dark:opacity-10"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t dark:from-primary via-base-200 dark:to-primary from-neutral to-neutral opacity-10 md:opacity-20 brightness-150 dark:opacity-10"></div>
       <h2 className="text-2xl sm:text-5xl z-10 font-bold">

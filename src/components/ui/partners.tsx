@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Partners() {
   return (
-    <div className="w-screen h-max py-10 flex flex-col items-center">
+    <div className="w-screen bg-base-100 h-max py-10 z-30 flex flex-col items-center">
       <h2 className="text-3xl sm:text-6xl text-center font-semibold">
         Partners
       </h2>

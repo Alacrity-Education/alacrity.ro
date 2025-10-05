@@ -36,7 +36,7 @@ achieve that in our NGO.`,
     },
   ];
   return (
-    <div className="h-max bg-base-200 flex flex-col items-center py-10 pb-20">
+    <div className="h-max bg-base-200 z-20 flex flex-col items-center py-10 pb-20">
       <h2 className="text-2xl sm:text-5xl font-semibold py-16">
         Perks. Only some of them.
       </h2>

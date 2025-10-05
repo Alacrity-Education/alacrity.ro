@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sponsors() {
   return (
-    <div className="w-screen h-max py-10 flex flex-col items-center ">
+    <div className="w-screen z-20 bg-base-100 h-max py-10 flex flex-col items-center ">
       <h2 className="text-3xl sm:text-6xl text-center font-semibold">
         Sponsors
       </h2>
@@ -20,7 +20,7 @@ export default function Sponsors() {
           alt="Fundatia Comunitara Bucuresti"
           src="/sponsors/fundatiacomunitara.png"
         />
-          <SponsorCard
+        <SponsorCard
           href="https://educlick.ro/"
           className=""
           alt="EduClick Sponsorizare Calculatoare"
@@ -32,7 +32,7 @@ export default function Sponsors() {
           alt="Bambulab"
           src="/sponsors/bambu_lab.png"
         />
-       
+
         <SponsorCard
           href="https://andonstar.com/"
           className=""

@@ -22,19 +22,22 @@ export const metadata: Metadata = {
   ],
 };
 
-export const revalidate = 3600
+export const revalidate = 3600;
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <About />
-      <Gallery />
+    <div className="max-w-screen overflow-x-clip">
+      <div className="relative z-0 ">
+        <Hero />
+        <About />
+        <Gallery />
+      </div>
+
       <Showcase />
       <AirBox />
       <Sponsors />
       <Partners />
       <Team />
-    </>
+    </div>
   );
 }

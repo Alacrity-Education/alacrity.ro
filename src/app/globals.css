@@ -73,7 +73,8 @@
 
 .custom-shape-divider-bottom-1737547199 {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    @apply -translate-y-full; 
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -92,9 +93,12 @@
     @apply fill-primary;
 }
 
+
+
 .custom-shape-divider-bottom-1737549060 {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    @apply -translate-y-full;
     left: 0;
     width: 100%;
     overflow: hidden;

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="hero  min-h-screen relative overflow-clip">
+    <div className="hero sticky top-0 z-0  min-h-screen overflow-clip">
       <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse relative ">
         <div className="w-1/3 relative -z-30 pt-10 sm:pt-0">
           <div className=" relative z-0 shadow-2xl h-1/2 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full bg-white rounded-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
@@ -38,19 +38,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="-z-10 mb-0 pb-1 !border-0   custom-shape-divider-bottom-1737547199">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div>
+
       <div className="h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 mask-circle -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 "></div>
     </div>
   );

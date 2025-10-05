@@ -11,7 +11,20 @@ interface CardProps {
 
 export default function About() {
   return (
-    <div className="text-primary-content min-h-screen relative bg-gradient-to-b from-primary to-neutral pb-4 flex flex-colitems-center ">
+    <div className="text-primary-content  bg-base-100 z-10 min-h-screen sticky top-0 bg-gradient-to-b from-primary to-neutral pb-4 flex flex-colitems-center ">
+      <div className=" mb-0 pb-1 !border-0  custom-shape-divider-bottom-1737547199">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <div className=" absolute h-full w-full overflow-clip">
         <Image
           alt="bg"
@@ -65,22 +78,12 @@ export default function About() {
             </p>
           </div>
         </div>
-        <Link href="/about" className="btn  sm:btn-xl btn-primary -translate-y-3 hover:translate-x-1 hover:-translate-y-4 transition-all duration-300">
+        <Link
+          href="/about"
+          className="btn  sm:btn-xl btn-primary -translate-y-3 hover:translate-x-1 hover:-translate-y-4 transition-all duration-300"
+        >
           Check out Alacrity's history!
         </Link>
-      </div>
-      <div className="custom-shape-divider-bottom-1737549060">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill"
-          ></path>
-        </svg>
       </div>
     </div>
   );
