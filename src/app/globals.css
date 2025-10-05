@@ -112,3 +112,8 @@
 .custom-shape-divider-bottom-1737549060 .shape-fill {
     @apply fill-base-200;
 }
+
+
+@layer components {
+
+}

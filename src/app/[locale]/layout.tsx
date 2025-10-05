@@ -12,7 +12,7 @@ import { routing } from "@/i18n/routing";
 import jsonLd from "@/app/json-ld.json";
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
