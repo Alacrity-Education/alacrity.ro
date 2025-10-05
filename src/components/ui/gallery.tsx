@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen w-screen relative z-20">
+    <div className="min-h-screen w-screen relative z-30">
       <div className="custom-shape-divider-bottom-1737549060 ">
         <svg
           data-name="Layer 1"
