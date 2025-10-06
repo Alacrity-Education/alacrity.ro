@@ -208,7 +208,7 @@ export function Timeline() {
     });
   };
   return (
-    <div className="relative h-[70vh] w-full bg-base-200 flex flex-col items-start p-10 border-4 border-primary dark:border-primary/30 rounded-lg shadow-xl">
+    <div className="relative min-h-[70vh] h-max w-full bg-base-200 flex flex-col items-start p-10 border-4 border-primary dark:border-primary/30 rounded-lg shadow-xl">
       <button
         onClick={scrollLeft}
         className="hidden sm:block btn btn-xl z-10 absolute left-10 bottom-10 btn-circle btn-accent hover:-translate-y-1 transition-all"

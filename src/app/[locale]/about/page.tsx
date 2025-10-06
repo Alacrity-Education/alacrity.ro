@@ -84,7 +84,7 @@ const DownArrow = () => {
   return (
     <a
       href="#timeline"
-      className=" hidden sm:block absolute bottom-10 hover:animate-bounce"
+      className=" hidden sm:block absolute bottom-0 hover:animate-bounce"
     >
       <svg
         height="800px"
