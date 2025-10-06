@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { Timeline } from "./components/ui/Timeline";
+
 export default function About() {
   return (
     <div className="h-max min-h-screen w-screen flex flex-col justify-center">
@@ -16,151 +18,6 @@ export default function About() {
         </p>
 
         <Timeline />
-      </div>
-    </div>
-  );
-}
-
-function Timeline() {
-  return (
-    <div className="relative h-[70vh] w-full bg-base-200 flex flex-col items-start p-10 border-4 border-primary rounded-lg shadow-xl">
-      <div
-        style={{ scrollbarGutter: "stable" }}
-        className="max-w-full h-full  overflow-x-scroll absolute top-0 left-0 scrollbar-visible"
-      >
-        <div className="relative w-max min-w-screen h-max p-10   ">
-          <div className="w-full h-1 bg-black dark:bg-white"></div>
-          <div className="flex flex-row gap-4">
-            <HistoryCard time="August 2024">
-              <b className="font-semibold text-primary">Alacrity</b> started as
-              an informal group <br /> at an NGO accelarator organised by{" "}
-              <b className="text-orange-400 font-bold">
-                The National Youth Foundation (FNT)
-              </b>
-            </HistoryCard>
-            <HistoryCard time="October 2024">
-              <b className="font-semibold text-primary">Alacrity</b> was a
-              member at <b className="text-primary font-bold">FastExpo</b> by
-              <b> ROSPIN</b>
-            </HistoryCard>
-            <HistoryCard time="December 2024">
-              <b className="font-semibold text-primary">Alacrity</b> was
-              acquired the status of an NGO in just 4 months.
-              <br />
-              <br />
-              The first project -{" "}
-              <b className="text-primary font-semibold">Alacrity AirBox</b> was
-              accepted and sponsored by{" "}
-              <b className="font-bold text-orange-400">FNT</b>
-              <br />
-              <br />
-              <b className="text-primary font-bold">Micul Electronist</b> is now
-              supporting <b className="text-primary font-bold">Alacrity</b>
-            </HistoryCard>
-            <HistoryCard time="January 2025 - February 2025">
-              <b className="text-primary font-semibold">Alacrity AirBox</b>{" "}
-              courses took place for over 4 weeks in both online and on-site
-              scenarios featuring hands-on engineering experience.
-              <br />
-              <br />
-              Alacrity was a member at{" "}
-              <b className="text-primary font-bold">
-                InternationalFest
-              </b> by{" "}
-              <b className="text-orange-400 font-bold">
-                Faculty of Engineering in Foreign Languages (UNSTPB FILS)
-              </b>
-            </HistoryCard>
-            <HistoryCard time="Mart 2025">
-              <b className="text-primary font-semibold">Alacrity</b> obtained a
-              sponsorship from{" "}
-              <b className="text-green-400 font-semibold">Bambu Lab</b>. A brand
-              new 3D printer is now supporting further 3D modeling courses and
-              shared with other NGO's at{" "}
-              <b className="text-orange-400 font-bold">FNT</b>
-              <br />
-              <br />
-              Alacrity was a member at{" "}
-              <b className="text-primary font-bold">PoliFest</b> by{" "}
-              <b className="text-blue-400 font-bold">
-                University Politehnica Bucharest
-              </b>
-            </HistoryCard>
-            <HistoryCard time="April 2025">
-              <b className="font-semibold text-primary">Alacrity</b> presented
-              their initiatives before hundreds of students of some of the most
-              prestigious high schools in Romania during the{" "}
-              <b className="text-primary font-bold">ROSPIN Caravan</b>
-            </HistoryCard>
-            <HistoryCard time="May 2025">
-              <b className="text-blue-500 font-bold">Adonstar</b> and{" "}
-              <b className="text-red-400 font-bold  break-keep">UNI-T</b> are
-              now official sponsors of the{" "}
-              <b className="font-semibold text-primary">Alacrity Lab</b>
-              ,providing top-of-the-line optical and measuring devices.
-              <br />
-              <br />
-              <b className="font-semibold text-primary">Alacrity </b>
-              secured a building at the center of Bucharest to build{" "}
-              <b>the first open access lab in Romania</b>
-              <br />
-              <br />
-              <br />
-              We participtated at
-              <b className="text-cyan-600 font-bold">
-                {" "}
-                Baret Scholars Graduation
-              </b>
-            </HistoryCard>
-            <HistoryCard time="June 2025">
-              We secured a long-term partnership deal with{" "}
-              <b className="text-red-600 font-bold">JBC Soldering</b>, providing
-              us with high-end soldering equipment.
-              <br />
-              <br />
-              Our initiative to start a{" "}
-              <b className="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">
-                VEXU robotics team
-              </b>{" "}
-              is sponsored by <b className="text-orange-400">ING</b>
-            </HistoryCard>
-            <HistoryCard time="July 2025">
-              <b className="font-semibold text-primary">Alacrity</b> organizes a
-              science collage workshop.
-              <br />
-              <br />
-              We started researching <b>microplastics in students' food</b>.
-            </HistoryCard>
-            <HistoryCard time="August 2025">
-              <b className="font-semibold text-primary">Alacrity</b> was a
-              member of <b>Robotics for all</b> by{" "}
-              <b className="text-red-400 font-bold">Boogeybots</b>
-            </HistoryCard>
-            <HistoryCard time="September 2025">
-              <b className="font-semibold text-primary">Alacrity</b> secured a
-              partnership with{" "}
-              <b className="text-yellow-500 font-semibold">
-                Magurele Science Park
-              </b>
-              <br />
-              <br />
-              We started researching the <b>financial needs of the youth</b>
-              <br />
-              <br />
-              Our team is picked to present for{" "}
-              <b className="text-orange-400">ING international directors</b> at
-              the <b>ING Hubs event</b>.
-              <br />
-              <br />
-              <b className="font-semibold text-primary">Alacrity</b> establishes
-              one of the first{" "}
-              <b className="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">
-                VEXU teams
-              </b>{" "}
-              in Romania
-            </HistoryCard>
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -223,26 +80,6 @@ function BackToHome() {
   );
 }
 
-function HistoryCard({
-  time,
-  children,
-}: {
-  time: String;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="relative border-l-4  w-64 sm:w-96  h-max py-4 border-black dark:border-white border-solid">
-      {/* <div className="absolute h-5 w-5 rounded-full bg-black dark:bg-white -left-2 -top-2"></div> */}
-      <div className="p-4">
-        <div className="badge badge-primary badge-sm sm:badge-md text-base-300 shadow-lg">
-          {time}
-        </div>
-        <div className="sm:text-lg pt-4">{children}</div>
-      </div>
-    </div>
-  );
-}
-
 const DownArrow = () => {
   return (
     <a
@@ -256,7 +93,7 @@ const DownArrow = () => {
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className="h-16 w-16 fill-primary/70 "
+        className="h-16 w-16 fill-accent "
       >
         <polygon
           points="17,12 17,13 15,13 15,15 13,15 13,3 11,3 11,15 9,15 9,13 7,13 7,12 5,12 5,15 7,15 7,17 9,17 9,19 10,19 10,20 

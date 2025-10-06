@@ -1,11 +1,11 @@
-import Showcase from "@/components/ui/showcase";
-import Hero from "../../components/ui/hero";
-import About from "@/components/ui/about";
-import Team from "@/components/ui/team";
-import AirBox from "@/components/ui/airbox";
-import Gallery from "@/components/ui/gallery";
-import Sponsors from "@/components/ui/sponsors";
-import Partners from "@/components/ui/partners";
+import Showcase from "@/app/components/ui/showcase";
+import Hero from "../components/ui/hero";
+import About from "@/app/components/ui/about";
+import Team from "@/app/components/ui/team";
+import AirBox from "@/app/components/ui/airbox";
+import Gallery from "@/app/components/ui/gallery";
+import Sponsors from "@/app/components/ui/sponsors";
+import Partners from "@/app/components/ui/partners";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

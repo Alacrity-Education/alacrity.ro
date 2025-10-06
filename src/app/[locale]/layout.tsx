@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/ui/nav";
-import Footer from "@/components/ui/footer";
+import Navbar from "@/app/components/ui/nav";
+import Footer from "@/app/components/ui/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
