@@ -25,7 +25,7 @@ const TIMELINE_OBJECT = {
   "December 2024": {
     text: (
       <>
-        <b className="font-semibold text-primary">Alacrity</b> was acquired the
+        <b className="font-semibold text-primary">Alacrity</b> has acquired the
         status of an NGO in just 4 months.
         <br />
         <br />
