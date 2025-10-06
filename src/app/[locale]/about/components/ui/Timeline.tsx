@@ -213,7 +213,7 @@ export function Timeline() {
         onClick={scrollLeft}
         className="hidden sm:block btn btn-xl z-10 absolute left-10 bottom-10 btn-circle btn-accent hover:-translate-y-1 transition-all"
       >
-        ◀
+        <LeftArrow className="h-full w-full invert" />
       </button>
       <div
         ref={scrollContainerRef}
@@ -234,8 +234,41 @@ export function Timeline() {
         onClick={scrollRight}
         className="hidden sm:block btn btn-xl z-10 absolute right-10 bottom-10 btn-circle btn-accent hover:-translate-y-1 transition-all"
       >
-        ▶
+        <RightArrow className="h-full w-full invert" />
       </button>
     </div>
   );
 }
+
+const ArrowSymbol = ({ className }: { className: string }) => {
+  return (
+    <svg
+      width="800px"
+      height="800px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M6 12H18M18 12L13 7M18 12L13 17"
+        stroke="#000000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+const RightArrow = ({ className }: { className: string }) => {
+  return <ArrowSymbol className={className} />;
+};
+
+export const DownArrow = ({ className }: { className: string }) => {
+  return <ArrowSymbol className={className + " rotate-90"} />;
+};
+
+const LeftArrow = ({ className }: { className: string }) => {
+  return <ArrowSymbol className={className + " rotate-180"} />;
+};

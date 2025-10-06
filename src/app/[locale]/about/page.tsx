@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { Timeline } from "./components/ui/Timeline";
+import { DownArrow, Timeline } from "./components/ui/Timeline";
 
 export default function About() {
   return (
@@ -46,7 +46,7 @@ function AboutHero() {
           <b className="text-primary font-semibold">2024</b>.
         </h2>
 
-        <DownArrow />
+        <DownBtn />
       </div>
       <div className="relative sm:basis-1/2 flex justify-center items-center overflow-x-clip pt-10 sm:pt-0">
         <div className="absolute h-full w-full bg-primary rounded-full top-5 left-5 rotate-12 mask-circle opacity-35"></div>
@@ -80,26 +80,13 @@ function BackToHome() {
   );
 }
 
-const DownArrow = () => {
+const DownBtn = () => {
   return (
     <a
       href="#timeline"
-      className=" hidden sm:block absolute bottom-0 hover:animate-bounce"
+      className="h-16 w-16 hidden sm:block absolute bottom-0 hover:animate-bounce"
     >
-      <svg
-        height="800px"
-        width="800px"
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        className="h-16 w-16 fill-accent "
-      >
-        <polygon
-          points="17,12 17,13 15,13 15,15 13,15 13,3 11,3 11,15 9,15 9,13 7,13 7,12 5,12 5,15 7,15 7,17 9,17 9,19 10,19 10,20 
-	11,20 11,21 13,21 13,20 14,20 14,19 15,19 15,17 17,17 17,15 19,15 19,12 "
-        />
-      </svg>
+      <DownArrow className="h-full w-full dark:invert" />
     </a>
   );
 };
