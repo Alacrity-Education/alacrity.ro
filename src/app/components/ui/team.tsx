@@ -7,56 +7,99 @@ interface TeamMember {
   image?: string;
 }
 
+interface TeamMember {
+  name: string;
+  role: string;
+  image?: string;
+  linkedinUrl?: string; // Renamed from 'linked' to 'linkedinUrl'
+}
+
 const members: TeamMember[] = [
   {
     name: "Vavilov Iris",
     role: "Founder and CEO",
     image: "/team/iris.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/iris-vavilov/",
   },
   {
     name: "Heroiu Justinian",
     role: "Founder and Research lead.",
     image: "/team/justin.png",
+    linkedinUrl: "https://www.linkedin.com/in/heroiu-rares-justinian-021b231bb",
   },
   {
     name: "Alexa Gabriela",
     role: "Founder and COO",
     image: "/team/tina.jpg",
+    linkedinUrl:
+      "https://www.linkedin.com/in/gabriela-florentina-alexa-37083033a",
   },
   {
     name: "Sainenco Luchian",
     role: "Founder and CTO",
     image: "/team/luca.png",
+    linkedinUrl: "https://www.linkedin.com/in/sainenco-luchian-ba879b271/",
+  },
+  {
+    name: "Andreea Ghițǎ",
+    role: "Robotics Lead.",
+    image: "/team/andreea.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/andreea-ioana-ghita-b5657720b",
   },
   {
     name: "Mușel Răzvan",
-    role: "Project Manager",
+    role: "Social Media Manager",
     image: "/team/musel.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/r%C4%83zvan-mu%C8%99el-a3618122b",
   },
   {
     name: "Ionescu Andrei",
     role: "Software Developer",
     image: "/team/stefan.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ionescuaandrei/",
   },
   {
     name: "Druică Adina",
     role: "Graphic Designer",
     image: "/team/adina.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/druicadenisaadina",
   },
   {
     name: "Sima Bianca",
     role: "Student Researcher",
     image: "/team/bianca.png",
+    linkedinUrl: "https://www.linkedin.com/in/bianca-ioana-sima-a97073327",
   },
   {
     name: "Tudor Zgîmbău",
     role: "Manager & economist",
     image: "/team/tudor.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/tudor-zgîmbău-a85274234/",
   },
   {
     name: "Stoica Mihai",
     role: "Trainer",
     image: "/team/mihai.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/mihai-stoica-0660b9310",
+  },
+  {
+    name: "Masoud Shams",
+    role: "Backend Developer",
+    image: "/team/masoud.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/masoud-shams",
+  },
+
+  {
+    name: "Ciprian Dinu",
+    role: "Hardware Developer ",
+    image: "",
+    linkedinUrl: "",
+  },
+  {
+    name: "Paula Benu",
+    role: "Creative Director",
+    image: "/team/paula.jpg",
+    linkedinUrl: "https://www.instagram.com/perixbanu?igsh=Mmg5MWJtdzN6MmUx",
   },
 ];
 
@@ -75,11 +118,11 @@ export default async function Team() {
   );
 }
 
-const TeamMember = async ({ name, role, image }: TeamMember) => {
+const TeamMember = async ({ name, role, image, linkedinUrl }: TeamMember) => {
   return (
     <div className="h-64 w-40 md:h-64 md:w-64 p-4 flex flex-col gap-2 items-center justify-center">
-      <div className="avatar">
-        <div className="w-32 h-32 rounded  relative">
+      <div className="avatar relative">
+        <div className="w-32 h-32 rounded relative">
           <Image
             loading="lazy"
             src={image || "/Falcon.svg"}
@@ -90,16 +133,23 @@ const TeamMember = async ({ name, role, image }: TeamMember) => {
             blurDataURL="/Falcon.svg"
             className="h-full w-full object-cover absolute z-10"
           />
-          <Image
-            alt="falcon"
-            height={500}
-            width={500}
-            className="h-full w-full object-cover relative "
-            src="/Falcon.svg"
-          />
         </div>
       </div>
-      <div className="text-sm sm:text-md font-bold text-center">{name}</div>
+      <a
+        href={linkedinUrl}
+        className="text-sm sm:text-md font-bold text-center flex flex-row hover:text-accent cursor-pointer"
+      >
+        {name}{" "}
+        {linkedinUrl && (
+          <Image
+            src={"/social-linkedin.svg"}
+            height={500}
+            width={500}
+            alt={name}
+            className={`h-5 w-5 `}
+          />
+        )}
+      </a>
       <div className="text-xs sm:text-sm">{role || "volunteer"}</div>
     </div>
   );
