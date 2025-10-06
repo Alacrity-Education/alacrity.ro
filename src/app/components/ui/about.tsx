@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function About() {
   return (
-    <div className="text-primary-content  bg-base-100 z-20 min-h-screen sticky top-0 bg-gradient-to-b from-primary to-neutral pb-4 flex flex-col items-center ">
+    <div className="text-primary-content  bg-base-100 z-20 min-h-screen relative bg-gradient-to-b from-primary to-neutral pb-4 flex flex-col items-center ">
       <div className=" mb-0 pb-1 !border-0  custom-shape-divider-bottom-1737547199">
         <svg
           data-name="Layer 1"
@@ -21,7 +21,7 @@ export default function About() {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill"
+            className="shape-fill scale-x-200 sm:scale-x-100"
           ></path>
         </svg>
       </div>
@@ -60,7 +60,7 @@ export default function About() {
             <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold">
               Wait, who?
             </h2>
-            <p className="py-20 pt-10 text-xl max-w-sm sm:max-w-2xl">
+            <p className="py-20 pt-10 text-lg max-w-sm sm:max-w-2xl">
               We are Alacrity Education, a youth-founded NGO, created by young
               people for young people, driven by the desire to promote
               high-quality STEAM (Science, Technology, Engineering, Arts and
@@ -69,7 +69,7 @@ export default function About() {
             <h2 className="text-2xl font-semibold pt-5">
               Not just keyboard warriors
             </h2>
-            <p className="py-20 pt-5 text-xl">
+            <p className="py-20 pt-5 text-lg">
               Our goal is to advocate for quality education and promote it in
               the most practical and pragmatic way possible. We don't want to
               remain just an "online publication" or an Instagram account. We
