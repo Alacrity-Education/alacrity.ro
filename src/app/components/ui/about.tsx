@@ -66,8 +66,8 @@ export default function About() {
               high-quality STEAM (Science, Technology, Engineering, Arts and
               Mathematics) education.
             </p>
-            <h2 className="text-2xl font-semibold pt-5">
-              Not just keyboard warriors
+            <h2 className="text-3xl font-semibold pt-5">
+              Not Just Keyboard Warriors
             </h2>
             <p className="py-20 pt-5 text-lg">
               Our goal is to advocate for quality education and promote it in

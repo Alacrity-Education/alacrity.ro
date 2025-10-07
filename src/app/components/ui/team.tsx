@@ -146,7 +146,7 @@ const TeamMember = async ({ name, role, image, linkedinUrl }: TeamMember) => {
             height={500}
             width={500}
             alt={name}
-            className={`h-5 w-5 `}
+            className={`h-5 w-5 dark:invert`}
           />
         )}
       </a>
