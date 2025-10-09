@@ -31,7 +31,7 @@ export default function Footer() {
             alt="hero"
             width={500}
             height={500}
-            className="h-full w-full object-cover invert saturate-0 mix-blend-screen"
+            className="h-full w-full object-cover "
             layout="responsive"
           />
         </div>
@@ -44,16 +44,22 @@ export default function Footer() {
         </p>
       </aside>
       <nav>
-        <div className="grid grid-flow-col gap-10 sm:gap-4">
+        <div className="grid grid-flow-col gap-4 sm:gap-3">
           {socialLinks.map(({ name, href, src, scale }) => (
-            <a key={name} href={href} className="h-10 w-10 sm:h-5 sm:w-5">
-              <Image
-                src={src}
-                height={500}
-                width={500}
-                alt={name}
-                className={`h-full w-full invert ${scale}`}
-              />
+            <a
+              key={name}
+              href={href}
+              className=" border-1 rounded-lg p-2 border-primary/20 bg-primary/40 hover:bg-primary/60 transition"
+            >
+              <div className="w-10 h-10 sm:w-5 sm:h-5 p-2 sm:p-0">
+                <Image
+                  src={src}
+                  height={500}
+                  width={500}
+                  alt={name}
+                  className={`h-full w-full object-cover invert ${scale}`}
+                />
+              </div>
             </a>
           ))}
         </div>
