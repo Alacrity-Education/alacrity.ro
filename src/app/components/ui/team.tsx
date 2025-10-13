@@ -91,15 +91,29 @@ const members: TeamMember[] = [
 
   {
     name: "Ciprian Dinu",
-    role: "Hardware Developer ",
-    image: "",
-    linkedinUrl: "",
+    role: "Hardware Developer",
+    image: "/team/cipriandinu.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/ciprian-andrei-dinu-6b4a629b",
+  },
+
+  {
+    name: "Mitran Andrei",
+    role: "Hardware Developer",
+    image: "/team/mitranandrei.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/mitran-andrei",
   },
   {
     name: "Paula Benu",
     role: "Creative Director",
     image: "/team/paula.jpg",
     linkedinUrl: "https://www.instagram.com/perixbanu?igsh=Mmg5MWJtdzN6MmUx",
+  },
+  {
+    name: "Cosmin-Gabriel Cojocaru",
+    role: "UI/UX Designer",
+    image: "/team/cosmincojocaru.jpeg",
+    linkedinUrl:
+      "https://www.linkedin.com/in/cosmin-gabriel-cojocaru-698b84269/",
   },
 ];
 
