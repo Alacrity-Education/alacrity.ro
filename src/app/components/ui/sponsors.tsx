@@ -2,17 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const SCROLL_INTERVAL_MS = 3000;
-const SCROLL_THRESHOLD = 10;
+const SCROLL_INTERVAL_MS = 1000;
+const SCROLL_THRESHOLD = 1;
 
 export default function Sponsors() {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const carousel = carouselRef.current;
-    if (!carousel) return;
+    if (!carousel || isHovered) return;
 
     const scrollInterval = setInterval(() => {
       const items = carousel.querySelectorAll(".carousel-item");
@@ -29,7 +30,7 @@ export default function Sponsors() {
     }, SCROLL_INTERVAL_MS);
 
     return () => clearInterval(scrollInterval);
-  }, []);
+  }, [isHovered]);
 
   const sponsors = [
     {
@@ -78,6 +79,8 @@ export default function Sponsors() {
         <div
           ref={carouselRef}
           className="carousel carousel-center w-full space-x-4 p-4 rounded-box"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           {sponsors.map((sponsor, index) => (
             <div key={index} className="carousel-item">
