@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
+const SCROLL_INTERVAL_MS = 3000;
+const SCROLL_THRESHOLD = 10;
+
 export default function Sponsors() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -18,12 +21,12 @@ export default function Sponsors() {
       const itemWidth = items[0].clientWidth;
       const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
-      if (carousel.scrollLeft >= maxScroll - 10) {
+      if (carousel.scrollLeft >= maxScroll - SCROLL_THRESHOLD) {
         carousel.scrollLeft = 0;
       } else {
         carousel.scrollLeft += itemWidth;
       }
-    }, 3000);
+    }, SCROLL_INTERVAL_MS);
 
     return () => clearInterval(scrollInterval);
   }, []);
