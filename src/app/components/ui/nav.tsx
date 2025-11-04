@@ -5,7 +5,10 @@ export default function Navbar() {
   return (
     <div className="navbar fixed bg-base-100 shadow-sm px-2 py-2 z-50">
       <div className="flex-1 h-max">
-        <Link href="/" className="btn btn-ghost text-xl text-primary">
+        <Link
+          href="/"
+          className="btn btn-ghost font-bold lg:text-xl text-primary"
+        >
           Alacrity Education
         </Link>
       </div>

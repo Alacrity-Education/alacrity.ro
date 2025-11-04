@@ -15,11 +15,11 @@ const HeroContent = () => {
       <HeroImage
         src="/logo.svg"
         alt="Alacrity Education Logo"
-        className="bg-white rounded-full shadow-2xl scale-75 sm:scale-100"
+        className="bg-white rounded-full shadow-2xl scale-75 md:scale-100"
       />
 
       <HeroText>
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-base-content dark:text-white sm:text-start sm:pt-4">
+        <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-center text-base-content dark:text-white sm:text-start sm:pt-4">
           Improving the education <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
             of the future

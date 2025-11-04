@@ -10,7 +10,7 @@ export default function Hero({
 }) {
   return (
     <div className="hero z-0 relative bg-base-200 pb-24 sm:pb-0 min-h-screen max-w-screen overflow-x-clip">
-      <div className="hero-content w-screen justify-between flex-col lg:flex-row-reverse relative ">
+      <div className="hero-content w-screen justify-around flex-col lg:flex-row-reverse relative ">
         {children}
       </div>
       <div
@@ -25,7 +25,7 @@ export default function Hero({
 
 export const HeroText = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <div className="max-w-md relative z-30 sm:max-w-2xl flex flex-col justify-center sm:block">
+    <div className="max-w-md relative z-30 sm:max-w-xl flex flex-col justify-center sm:block">
       {children}
     </div>
   );
@@ -41,8 +41,8 @@ export const HeroImage = ({
   className?: string;
 }) => {
   return (
-    <div className="w-full px-10 sm:w-1/3 relative pt-10 sm:pt-0">
-      <div className="relative z-0 md:h-full overflow-visible hover:-translate-y-1 transition-transform scale-125 w-full mb-10 md:mb-0 flex justify-center items-center aspect-square">
+    <div className="w-full px-10 md:w-2/5 relative pt-10 sm:pt-0">
+      <div className="relative z-0 lg:h-full overflow-visible hover:-translate-y-1 transition-transform w-full mb-10 md:mb-0">
         <Image
           src={src}
           alt={alt}

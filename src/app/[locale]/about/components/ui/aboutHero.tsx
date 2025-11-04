@@ -13,9 +13,14 @@ export default function AboutHero() {
 const HeroContent = () => {
   return (
     <>
-      <HeroImage src="/about/team.jpg" alt="Alacrity Education Team" />
-      <BackToHome />
+      <HeroImage
+        className="rounded-lg shadow-2xl md:scale-125 "
+        src="/about/team.jpg"
+        alt="Alacrity Education Team"
+      />
+
       <HeroText>
+        <BackToHome />
         <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl pt-10 font-bold dark:text-white">
           Hi, we're <b className="text-primary">Alacrity</b>
         </h1>
