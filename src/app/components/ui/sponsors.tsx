@@ -1,56 +1,91 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function Sponsors() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    const scrollInterval = setInterval(() => {
+      const items = carousel.querySelectorAll(".carousel-item");
+      if (items.length === 0) return;
+
+      const itemWidth = items[0].clientWidth;
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+      if (carousel.scrollLeft >= maxScroll - 10) {
+        carousel.scrollLeft = 0;
+      } else {
+        carousel.scrollLeft += itemWidth;
+      }
+    }, 3000);
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  const sponsors = [
+    {
+      href: "http://www.rotineret.ro/",
+      alt: "Fundatia Nationala Pentru Tineret",
+      src: "/sponsors/fnt.png",
+    },
+    {
+      href: "https://fundatiacomunitarabucuresti.ro/",
+      alt: "Fundatia Comunitara Bucuresti",
+      src: "/sponsors/fundatiacomunitara.png",
+    },
+    {
+      href: "https://educlick.ro/",
+      alt: "EduClick Sponsorizare Calculatoare",
+      src: "/sponsors/educlick.png",
+    },
+    {
+      href: "https://bambulab.com/",
+      alt: "Bambulab",
+      src: "/sponsors/bambu_lab.png",
+    },
+    {
+      href: "https://andonstar.com/",
+      alt: "andonstar",
+      src: "/sponsors/adonstar.png",
+    },
+    {
+      href: "https://www.uni-trend.com/",
+      alt: "uni-trend",
+      src: "/sponsors/unit.png",
+    },
+    {
+      href: "https://www.jbctools.com",
+      alt: "JBC The Soldering Co.",
+      src: "/sponsors/JBC-the-soldering-co.svg",
+    },
+  ];
+
   return (
-    <div className="w-screen z-20 bg-base-100 h-max py-10 flex flex-col items-center ">
+    <div className="w-screen z-20 bg-base-100 h-max py-10 flex flex-col items-center">
       <h2 className="text-3xl sm:text-6xl text-center font-semibold">
         Sponsors
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row py-6 gap-2 items-center px-10">
-        <SponsorCard
-          href="http://www.rotineret.ro/"
-          className=""
-          alt="Fundatia Nationala Pentru Tineret"
-          src="/sponsors/fnt.png"
-        />
-        <SponsorCard
-          href="https://fundatiacomunitarabucuresti.ro/"
-          className=""
-          alt="Fundatia Comunitara Bucuresti"
-          src="/sponsors/fundatiacomunitara.png"
-        />
-        <SponsorCard
-          href="https://educlick.ro/"
-          className=""
-          alt="EduClick Sponsorizare Calculatoare"
-          src="/sponsors/educlick.png"
-        />
-        <SponsorCard
-          href="https://bambulab.com/"
-          className=""
-          alt="Bambulab"
-          src="/sponsors/bambu_lab.png"
-        />
-
-        <SponsorCard
-          href="https://andonstar.com/"
-          className=""
-          alt="andonstar"
-          src="/sponsors/adonstar.png"
-        />
-        <SponsorCard
-          href="https://www.uni-trend.com/"
-          className=""
-          alt="uni-trend"
-          src="/sponsors/unit.png"
-        />
-        <SponsorCard
-          href="https://www.jbctools.com"
-          className=""
-          alt="JBC The Soldering Co."
-          src="/sponsors/JBC-the-soldering-co.svg"
-        />
+      <div className="w-full py-6 px-4 sm:px-10">
+        <div
+          ref={carouselRef}
+          className="carousel carousel-center w-full space-x-4 p-4 rounded-box"
+        >
+          {sponsors.map((sponsor, index) => (
+            <div key={index} className="carousel-item">
+              <SponsorCard
+                href={sponsor.href}
+                alt={sponsor.alt}
+                src={sponsor.src}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -68,9 +103,9 @@ function SponsorCard({
   alt: string;
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank" rel="noopener noreferrer">
       <Image
-        className={`object-contain w-32 h-32 sm:h-64 sm:w-64 p-5 bg-white ${className}`}
+        className={`object-contain w-32 h-32 sm:h-48 sm:w-48 md:h-64 md:w-64 p-5 bg-white rounded-lg ${className}`}
         src={src}
         alt={alt}
         height={500}
