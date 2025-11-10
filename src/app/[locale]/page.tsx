@@ -7,6 +7,7 @@ import Sponsors from "@/app/components/ui/sponsors";
 import Partners from "@/app/components/ui/partners";
 import { Metadata } from "next";
 import HomeHero from "../components/ui/homeHero";
+import Projects from "../components/ui/projects";
 
 export const metadata: Metadata = {
   keywords: [
@@ -27,14 +28,13 @@ export const revalidate = 3600;
 export default function Home() {
   return (
     <div className="max-w-screen overflow-x-clip">
-      <div className="relative z-0 ">
-        <HomeHero />
-        <About />
-        <Gallery />
-      </div>
+      <HomeHero />
+      <About />
+      <Gallery />
 
       <Showcase />
-      <AirBox />
+      {/* <AirBox /> */}
+      <Projects />
       <Sponsors />
       <Partners />
       <Team />

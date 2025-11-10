@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/app/components/ui/nav";
 import Footer from "@/app/components/ui/footer";
@@ -57,6 +57,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
 export default async function RootLayout({
   children,
   params,
@@ -75,7 +80,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}
+      >
         <GoogleAnalytics gaId="G-7FHYBDDCEX" />
         <NextIntlClientProvider>
           <Navbar />

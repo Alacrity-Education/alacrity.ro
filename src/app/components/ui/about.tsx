@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function About() {
   return (
-    <div className="text-primary-content  bg-base-100 z-20 min-h-screen relative bg-gradient-to-b from-primary to-neutral pb-4 flex flex-col items-center ">
+    <div className="text-primary-content  bg-base-100 z-20 min-h-screen relative bg-gradient-to-b from-primary to-secondary pb-4 flex flex-col items-center ">
       <div className=" mb-0 pb-1 !border-0  custom-shape-divider-bottom-1737547199">
         <svg
           data-name="Layer 1"

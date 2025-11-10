@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="footer sm:footer-horizontal flex flex-col h-max footer-center bg-gradient-to-tr from-neutral to-primary text-primary-content p-10 z-20">
+    <footer className="footer sm:footer-horizontal flex flex-col h-max footer-center bg-gradient-to-tr from-secondary to-primary text-primary-content p-10 z-20">
       <aside>
         <div className="w-20 h-20">
           <Image

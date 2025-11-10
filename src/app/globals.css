@@ -11,13 +11,13 @@
     --color-base-300: #110a18;
     --color-base-content: #cccccc;
     --color-primary: #5863ff;
-    --color-primary-content: #e4d8ee;
+    --color-primary-content: #ffffff;
     --color-secondary: var(--color-emerald-500);
     --color-secondary-content: var(--color-base-100);
     --color-accent: var(--color-purple-500);
     --color-accent-content: #d9d1e6;
-    --color-neutral: #2e0947;
-    --color-neutral-content: #ebddf6;
+    --color-neutral: oklch(100% 0 0);
+    --color-neutral-content: oklch(21% 0.006 285.885);
     --color-info: #a884bf;
     --color-info-content: #0a060d;
     --color-success: #6f11ad;
@@ -33,7 +33,7 @@
     --size-field: 0.21875rem;
     --border: 1px;
     --depth: 1;
-      --noise:  1;
+    --noise: 1;
 }
 
 @plugin "daisyui/theme" {
@@ -46,7 +46,7 @@
     --color-base-300: oklch(95% 0 0);
     --color-base-content: oklch(21% 0.006 285.885);
     --color-primary: #281464;
-    --color-primary-content: #d9d1df;
+    --color-primary-content: #ffffff;
     --color-secondary: var(--color-pink-700);
     --color-secondary-content: #e4cfdb;
     --color-accent: #545cfc;
@@ -111,6 +111,10 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 85px;
+}
+
+@theme inline{
+    --font-project: var(--font-montserrat);
 }
 
 .custom-shape-divider-bottom-1737549060 .shape-fill {

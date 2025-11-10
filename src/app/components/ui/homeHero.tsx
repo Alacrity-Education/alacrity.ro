@@ -21,7 +21,7 @@ const HeroContent = () => {
       <HeroText>
         <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-center text-base-content dark:text-white sm:text-start sm:pt-4">
           Improving the education <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             of the future
           </span>
         </h1>
@@ -33,7 +33,7 @@ const HeroContent = () => {
           <br />
           From air quality sensors to environmental tech, we help young minds
           shape a{" "}
-          <b className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          <b className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             sustainable and intelligent future
           </b>
           .
@@ -41,7 +41,7 @@ const HeroContent = () => {
 
         <a
           href="https://buymeacoffee.com/alacrity_education?ref=alacrity.education"
-          className="btn bg-gradient-to-tr from-accent text-white to-primary border-0 btn-lg hover:-translate-y-1 duration-500 transition-transform z-50 dark:shadow-xl  "
+          className="btn bg-gradient-to-tr from-secondary text-white to-primary border-0 btn-lg hover:-translate-y-1 duration-500 transition-transform z-50 dark:shadow-xl  "
         >
           Donate for our lab!
         </a>
