@@ -70,10 +70,10 @@ export function AirBoxProject() {
     <ProjectCard>
       <ProjectCardCell className="col-span-2  text-primary ">
         {/* <div className="text-lg lg:text-xl">Alacrity/</div> */}
-        <div className="text-5xl sm:text-2xl md:text-3xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-primary font-extrabold tracking-widest font-project">
+        <div className="text-5xl sm:text-2xl md:text-3xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-primary font-extrabold tracking-widest font-project">
           AirBox
         </div>
-        <p className="sm:text-lg md:text-xl text-base-content lg:text-2xl tracking-wide ">
+        <p className="sm:text-lg md:text-lg text-base-content lg:text-2xl tracking-wide ">
           Our flagship STEAM-intensive course.
         </p>
       </ProjectCardCell>
@@ -85,7 +85,7 @@ export function AirBoxProject() {
               key={highlight}
               className="h-full w-full relative bg-primary rounded-lg p-1 overflow-clip"
             >
-              <div className="h-full w-full  -right-1/3 -bottom-1/3  absolute  text-accent">
+              <div className="h-full w-full  -right-0 -bottom-0 opacity-50  absolute  text-accent">
                 {backgroundIcon}
               </div>
               <div
@@ -145,8 +145,8 @@ export function AirBoxProject() {
       <ProjectCardCell className="bg-primary text-primary-content row-span-2">
         <div className="absolute    w-full h-full   top-0  max-h-full max-w-full overflow-clip"></div>
         <div className="p-2 flex flex-col h-full justify-center items-center relative">
-          <div className="h-1/2 w-1/2 relative ">
-            <FaBatteryFull className="absolute h-full w-full text-success translate-1" />
+          <div className=" h-1/2 w-1/2 absolute sm:relative right-0 -rotate-0 scale-[2.5] sm:rotate-0 sm:scale-100 ">
+            <FaBatteryFull className="absolute h-full w-full text-success translate-1 " />
             <FaBatteryFull className="relative z-10 h-full w-full text-primary-content " />
           </div>
 
