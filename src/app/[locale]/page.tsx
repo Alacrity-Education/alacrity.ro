@@ -32,8 +32,8 @@ export default function Home() {
       <div className="md:-translate-y-20">
         <About />
         <Gallery />
-        <Showcase />
         <Projects />
+        <Showcase />
         <Sponsors />
         <Partners />
         <Team />
