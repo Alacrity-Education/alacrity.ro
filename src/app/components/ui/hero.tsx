@@ -9,7 +9,7 @@ export default function Hero({
   maskType?: string;
 }) {
   return (
-    <div className="hero z-0 relative bg-base-200 pb-24 sm:pb-0 min-h-screen max-w-screen overflow-x-clip">
+    <div className="hero z-0 relative bg-base-100 pb-24 sm:pb-0 min-h-screen max-w-screen overflow-x-clip">
       <div className="hero-content w-screen justify-around flex-col lg:flex-row-reverse relative ">
         {children}
       </div>

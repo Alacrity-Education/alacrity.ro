@@ -29,15 +29,15 @@ export default function Home() {
   return (
     <div className="max-w-screen overflow-x-clip">
       <HomeHero />
-      <About />
-      <Gallery />
-
-      <Showcase />
-      {/* <AirBox /> */}
-      <Projects />
-      <Sponsors />
-      <Partners />
-      <Team />
+      <div className="md:-translate-y-20">
+        <About />
+        <Gallery />
+        <Showcase />
+        <Projects />
+        <Sponsors />
+        <Partners />
+        <Team />
+      </div>
     </div>
   );
 }

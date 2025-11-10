@@ -22,7 +22,7 @@ export default function Projects() {
 
 export function ProjectCard({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="w-full rounded-lg h-[70vh] bg-primary shadow-lg grid grid-cols-4 grid-rows-2 gap-4 p-6">
+    <div className="w-full rounded-lg h-max md:h-[70vh] bg-primary shadow-lg flex flex-col md:grid grid-cols-4 grid-rows-4 gap-4 p-6">
       {children}
     </div>
   );
@@ -68,70 +68,73 @@ export function AirBoxProject() {
 
   return (
     <ProjectCard>
-      <ProjectCardCell className="col-span-2 text-primary-content ">
+      <ProjectCardCell className="col-span-2  text-primary-content ">
         {/* <div className="text-lg lg:text-xl">Alacrity/</div> */}
-        <div className="text-3xl lg:text-8xl font-extrabold tracking-widest font-project">
+        <div className="text-5xl sm:text-2xl md:text-3xl lg:text-7xl font-extrabold tracking-widest font-project">
           AirBox
         </div>
-        <p className="text-xl lg:text-2xl tracking-wide ">
+        <p className="sm:text-lg md:text-xl lg:text-2xl tracking-wide ">
           Our flagship STEAM-intensive course.
         </p>
       </ProjectCardCell>
 
-      <ProjectCardCell className=" ">
-        <div className=" grid grid-cols-2 grid-rows-2 h-full w-full gap-4">
+      <ProjectCardCell className="lg:col-span-1 row-span-2">
+        <div className="flex flex-col md:grid grid-cols-2 grid-rows-2 h-full w-full gap-4">
           {editionHighlights.map(({ highlight, backgroundIcon }) => (
-            <div className="h-full w-full relative bg-neutral  rounded-lg p-1 overflow-clip">
+            <div
+              key={highlight}
+              className="h-full w-full relative bg-neutral rounded-lg p-1 overflow-clip"
+            >
               <div className="h-full w-full  -right-1/3 -bottom-1/3 opacity-50 absolute  text-primary">
                 {backgroundIcon}
               </div>
               <div
                 key={highlight}
-                className="  h-full z-10 w-full rounded-lg p-1 relative text-neutral-content"
+                className=" h-full z-10 w-full rounded-lg p-1 relative text-neutral-content"
               >
-                <p className="md:text-3xl font-bold">{highlight}</p>
+                <p className="md:text-md xl:text-2xl font-bold">{highlight}</p>
               </div>
             </div>
           ))}
         </div>
       </ProjectCardCell>
-      <ProjectCardCell className="bg-neutral text-neutral-content row-span-2">
-        <NonProfit className="h-full -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-150 absolute stroke-primary rotate-25" />
+      <ProjectCardCell className="bg-neutral text-neutral-content  row-span-4">
+        <NonProfit className="h-full -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-150 absolute stroke-primary opacity-40  rotate-25" />
         <div className="z-10 relative p-2 flex flex-col h-full">
-          <p className="md:text-2xl lg:text-4xl font-semibold">Open Source</p>
-          <p className="md:text-2xl lg:text-4xl font-semibold">Open Access</p>
-          <p className="md:text-2xl lg:text-4xl font-semibold">
+          <p className="md:text-lg xl:text-4xl font-semibold">Open Source</p>
+          <p className="md:text-lg xl:text-4xl font-semibold">Open Access</p>
+          <p className="md:text-lg xl:text-4xl font-semibold">
             Open To Everyone
           </p>
-          <p className="text pt-2">
+          <p className="text-sm md:text-md pt-2">
             From Stations to Github and collected Data, the entire AirBox
             framework is available to anyone on the internet.
           </p>
           <div className="flex-1"></div>
-          <button className="btn btn-block btn-error">
-            AirBox website is under development
-          </button>
+          {/* <button className="btn btn-block btn-xs btn-neutral">
+            website under development
+          </button> */}
         </div>
       </ProjectCardCell>
 
-      <ProjectCardCell className="bg-neutral col-span-2 relative">
-        <div className="absolute h-full  right-0 bottom-0">
+      <ProjectCardCell className="bg-neutral col-span-2 row-span-3 relative">
+        <div className="absolute h-full opacity-40 right-0 bottom-0">
           <GiProgression className="h-full w-full text-primary" />
         </div>
         <div className="z-10 relative p-2 flex flex-col h-full text-neutral-content">
-          <p className="md:text-2xl lg:text-4xl font-semibold">
+          <p className="md:text-xl xl:text-4xl font-semibold">
             The course
             <br />
             that <span className="text-primary">teaches</span> differently.
           </p>
-          <p className="text pt-2 max-w-2/3">
+          <p className="text-sm lg:text-md pt-2 max-w-2/3">
             {/* All in one: an educational kit, a distributed air measuring system
             and an open access data platform. */}
             An <b>educational kit </b>
             that aims to teach high-school students about the <b>environment</b>
             ,<b> programming</b> and <b> networking</b>.
           </p>
-          <p className="text max-w-3/5 pt-2">
+          <p className="text-sm lg:text-md max-w-3/5 pt-2">
             <b className="text-primary">Airbox</b> allows high-schoolers to gain
             <b> real-world experience</b> in programming and electronics by
             allowing them to build useful infrastructure together with us, the
@@ -139,21 +142,21 @@ export function AirBoxProject() {
           </p>
         </div>
       </ProjectCardCell>
-      <ProjectCardCell className="bg-neutral text-neutral-content">
+      <ProjectCardCell className="bg-neutral text-neutral-content row-span-2">
         <div className="absolute    w-full h-full   top-0  max-h-full max-w-full overflow-clip"></div>
         <div className="p-2 flex flex-col h-full justify-center items-center relative">
           <div className="h-1/2 w-1/2 relative ">
-            <FaBatteryFull className="absolute h-full w-full text-secondary translate-1" />
+            <FaBatteryFull className="absolute h-full w-full text-success translate-1" />
             <FaBatteryFull className="relative z-10 h-full w-full text-primary " />
           </div>
 
-          <p className="md:text-6xl font-bold tracking-wide w-full text-start">
+          <p className="md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-wide w-full text-start">
             3 Months
           </p>
-          <p className="md:text-2xl lg:text-2xl text-start w-full">
-            On a <span className=" font-bold">single</span> charge
+          <p className="md:text-md xl:text-2xl text-start w-full">
+            A <span className=" font-bold">single</span> charge
           </p>
-          <p className="text-lg w-full text-start">
+          <p className="text-sm xl:text-lg w-full text-start">
             Powered by <span className="text-primary font-bold ">recycled</span>{" "}
             lithium batteries
           </p>
