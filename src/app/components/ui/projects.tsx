@@ -61,7 +61,7 @@ export function AirBoxProject() {
       backgroundIcon: <MdOutlineSchool className="h-full w-full" />,
     },
     {
-      highlight: "30 Hours",
+      highlight: "30+ Hours",
       backgroundIcon: <FaRegClock className="h-full w-full" />,
     },
   ];
@@ -83,29 +83,29 @@ export function AirBoxProject() {
           {editionHighlights.map(({ highlight, backgroundIcon }) => (
             <div
               key={highlight}
-              className="h-full w-full relative bg-primary rounded-lg p-1 overflow-clip"
+              className="h-full w-full relative bg-primary rounded-lg p-4 overflow-clip"
             >
-              <div className="h-full w-full  -right-0 -bottom-0 opacity-50  absolute  text-accent">
+              <div className="h-full w-full -right-0 -bottom-0 opacity-30  absolute  text-accent p-2">
                 {backgroundIcon}
               </div>
               <div
                 key={highlight}
                 className=" h-full z-10 w-full rounded-lg p-1 relative text-primary-content"
               >
-                <p className="md:text-md xl:text-2xl font-bold">{highlight}</p>
+                <p className="md:text-lg xl:text-xl font-bold">{highlight}</p>
               </div>
             </div>
           ))}
         </div>
       </ProjectCardCell>
       <ProjectCardCell className="bg-primary text-primary-content  border-primary row-span-4">
-        <NonProfit className="h-full scale-[3] md:scale-100 -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-150 absolute stroke-accent opacity-40 lg:opacity-100  rotate-25" />
-        <div className="z-10 relative p-2 flex flex-col h-full">
+        <NonProfit className="h-full scale-[3] md:scale-200 -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-200 absolute opacity-30 stroke-accent lg:opacity-30  rotate-25" />
+        <div className="z-10 relative p-6 flex flex-col h-full">
           <p className="md:text-lg xl:text-4xl font-semibold">Open Source</p>
-          <p className="md:text-lg xl:text-4xl font-semibold">Open Access</p>
-          <p className="md:text-lg xl:text-4xl font-semibold">
-            Open To Everyone
+          <p className="md:text-base xl:text-lg font-semibold pt-1">
+            Open Access, Open To Everyone.
           </p>
+
           <p className="text-sm md:text-md pt-2">
             From Stations to Github and collected Data, the entire AirBox
             framework is available to anyone on the internet.
@@ -118,10 +118,10 @@ export function AirBoxProject() {
       </ProjectCardCell>
 
       <ProjectCardCell className="bg-primary col-span-2 row-span-3 relative">
-        <div className="absolute h-full w-full translate-x-1/5 opacity-50 md:translate-x-0 xl:translate-x-1/5  right-0 bottom-0">
+        <div className="absolute h-full w-full translate-x-1/5 opacity-30 md:translate-x-0 xl:translate-x-1/5  right-0 bottom-0">
           <GiProgression className="h-full scale-[1.1] md:scale-100 w-full right-0 text-accent" />
         </div>
-        <div className="z-10 relative p-2 flex flex-col h-full text-primary-content">
+        <div className="z-10 relative p-6 flex flex-col h-full text-primary-content">
           <p className="md:text-xl xl:text-4xl font-semibold">
             The course
             <br />
@@ -142,15 +142,12 @@ export function AirBoxProject() {
           </p>
         </div>
       </ProjectCardCell>
-      <ProjectCardCell className="bg-primary text-primary-content row-span-2">
-        <div className="absolute    w-full h-full   top-0  max-h-full max-w-full overflow-clip"></div>
-        <div className="p-2 flex flex-col h-full justify-center items-center relative">
-          <div className=" h-1/2 w-1/2 absolute sm:relative right-0 -rotate-0 scale-[2.5] sm:rotate-0 sm:scale-100 ">
-            <FaBatteryFull className="absolute h-full w-full text-success translate-1 " />
-            <FaBatteryFull className="relative z-10 h-full w-full text-primary-content " />
-          </div>
-
-          <p className="md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-wide w-full text-start">
+      <ProjectCardCell className="bg-primary relative text-primary-content row-span-2">
+        <div className="h-full w-full absolute z-0 right-0 scale-[2.5]  bottom-0 flex items-end justify-end sm:scale-150 p-8">
+          <FaBatteryFull className=" h-2/3 w-2/3 text-accent opacity-50 -rotate-45" />
+        </div>
+        <div className="p-4 relative z-10">
+          <p className="md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-wide w-full text-start ">
             3 Months
           </p>
           <p className="md:text-md xl:text-2xl text-start w-full">
