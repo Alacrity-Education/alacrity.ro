@@ -11,7 +11,7 @@ import { MdOutlineSchool } from "react-icons/md";
 
 export default function Projects() {
   return (
-    <div className="w-screen min-h-screen px-10 bg-base-100">
+    <div className="w-screen min-h-screen px-4 lg:px-10 bg-base-100">
       <h2 className="text-2xl sm:text-5xl font-semibold py-16 text-center">
         Alacrity Projects.
       </h2>
@@ -79,7 +79,7 @@ export function AirBoxProject() {
       </ProjectCardCell>
 
       <ProjectCardCell className="lg:col-span-1 row-span-2">
-        <div className="flex flex-col md:grid grid-cols-2 grid-rows-2 h-full w-full gap-4">
+        <div className="grid grid-cols-2 grid-rows-2 h-full w-full gap-4">
           {editionHighlights.map(({ highlight, backgroundIcon }) => (
             <div
               key={highlight}
@@ -118,8 +118,8 @@ export function AirBoxProject() {
       </ProjectCardCell>
 
       <ProjectCardCell className="bg-neutral col-span-2 row-span-3 relative">
-        <div className="absolute h-full opacity-40 right-0 bottom-0">
-          <GiProgression className="h-full w-full text-primary" />
+        <div className="absolute h-full w-full xl:translate-x-1/5 opacity-40 right-0 bottom-0">
+          <GiProgression className="h-full w-full right-0 text-primary" />
         </div>
         <div className="z-10 relative p-2 flex flex-col h-full text-neutral-content">
           <p className="md:text-xl xl:text-4xl font-semibold">
@@ -127,14 +127,14 @@ export function AirBoxProject() {
             <br />
             that <span className="text-primary">teaches</span> differently.
           </p>
-          <p className="text-sm lg:text-md pt-2 max-w-2/3">
+          <p className="text-sm lg:text-base pt-2 max-w-2/3">
             {/* All in one: an educational kit, a distributed air measuring system
             and an open access data platform. */}
             An <b>educational kit </b>
             that aims to teach high-school students about the <b>environment</b>
             ,<b> programming</b> and <b> networking</b>.
           </p>
-          <p className="text-sm lg:text-md max-w-3/5 pt-2">
+          <p className="text-sm lg:text-base max-w-3/5 pt-2">
             <b className="text-primary">Airbox</b> allows high-schoolers to gain
             <b> real-world experience</b> in programming and electronics by
             allowing them to build useful infrastructure together with us, the
