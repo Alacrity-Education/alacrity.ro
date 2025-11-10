@@ -11,7 +11,7 @@ import { MdOutlineSchool } from "react-icons/md";
 
 export default function Projects() {
   return (
-    <div className="w-screen min-h-screen px-4 lg:px-10 bg-base-100">
+    <div className="w-screen min-h-screen px-4 lg:px-10 bg-base-200">
       <h2 className="text-2xl sm:text-5xl font-semibold py-16 text-center">
         Alacrity Projects.
       </h2>
@@ -22,7 +22,7 @@ export default function Projects() {
 
 export function ProjectCard({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="w-full rounded-lg h-max md:h-[70vh] bg-primary shadow-lg flex flex-col md:grid grid-cols-4 grid-rows-4 gap-4 p-6">
+    <div className="w-full rounded-lg h-max md:h-[70vh] bg-base-100 border-4 border-primary shadow-lg flex flex-col md:grid grid-cols-4 grid-rows-4 gap-4 p-6">
       {children}
     </div>
   );
@@ -68,29 +68,29 @@ export function AirBoxProject() {
 
   return (
     <ProjectCard>
-      <ProjectCardCell className="col-span-2  text-primary-content ">
+      <ProjectCardCell className="col-span-2  text-primary ">
         {/* <div className="text-lg lg:text-xl">Alacrity/</div> */}
-        <div className="text-5xl sm:text-2xl md:text-3xl lg:text-7xl font-extrabold tracking-widest font-project">
+        <div className="text-5xl sm:text-2xl md:text-3xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-primary font-extrabold tracking-widest font-project">
           AirBox
         </div>
-        <p className="sm:text-lg md:text-xl lg:text-2xl tracking-wide ">
+        <p className="sm:text-lg md:text-xl text-base-content lg:text-2xl tracking-wide ">
           Our flagship STEAM-intensive course.
         </p>
       </ProjectCardCell>
 
-      <ProjectCardCell className="lg:col-span-1 row-span-2">
+      <ProjectCardCell className="lg:col-span-1 row-span-2 ">
         <div className="grid grid-cols-2 grid-rows-2 h-full w-full gap-4">
           {editionHighlights.map(({ highlight, backgroundIcon }) => (
             <div
               key={highlight}
-              className="h-full w-full relative bg-neutral rounded-lg p-1 overflow-clip"
+              className="h-full w-full relative bg-primary rounded-lg p-1 overflow-clip"
             >
-              <div className="h-full w-full  -right-1/3 -bottom-1/3 opacity-50 absolute  text-primary">
+              <div className="h-full w-full  -right-1/3 -bottom-1/3  absolute  text-accent">
                 {backgroundIcon}
               </div>
               <div
                 key={highlight}
-                className=" h-full z-10 w-full rounded-lg p-1 relative text-neutral-content"
+                className=" h-full z-10 w-full rounded-lg p-1 relative text-primary-content"
               >
                 <p className="md:text-md xl:text-2xl font-bold">{highlight}</p>
               </div>
@@ -98,8 +98,8 @@ export function AirBoxProject() {
           ))}
         </div>
       </ProjectCardCell>
-      <ProjectCardCell className="bg-neutral text-neutral-content  row-span-4">
-        <NonProfit className="h-full -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-150 absolute stroke-primary opacity-40  rotate-25" />
+      <ProjectCardCell className="bg-primary text-primary-content  border-primary row-span-4">
+        <NonProfit className="h-full scale-[3] md:scale-100 -translate-x-1/3 left-1/3 bottom-0 translate-y-1/3 scale-150 absolute stroke-accent opacity-40 lg:opacity-100  rotate-25" />
         <div className="z-10 relative p-2 flex flex-col h-full">
           <p className="md:text-lg xl:text-4xl font-semibold">Open Source</p>
           <p className="md:text-lg xl:text-4xl font-semibold">Open Access</p>
@@ -117,15 +117,15 @@ export function AirBoxProject() {
         </div>
       </ProjectCardCell>
 
-      <ProjectCardCell className="bg-neutral col-span-2 row-span-3 relative">
-        <div className="absolute h-full w-full xl:translate-x-1/5 opacity-40 right-0 bottom-0">
-          <GiProgression className="h-full w-full right-0 text-primary" />
+      <ProjectCardCell className="bg-primary col-span-2 row-span-3 relative">
+        <div className="absolute h-full w-full translate-x-1/5 opacity-50 md:translate-x-0 xl:translate-x-1/5  right-0 bottom-0">
+          <GiProgression className="h-full scale-[1.1] md:scale-100 w-full right-0 text-accent" />
         </div>
-        <div className="z-10 relative p-2 flex flex-col h-full text-neutral-content">
+        <div className="z-10 relative p-2 flex flex-col h-full text-primary-content">
           <p className="md:text-xl xl:text-4xl font-semibold">
             The course
             <br />
-            that <span className="text-primary">teaches</span> differently.
+            that <span className="text-accent">teaches</span> differently.
           </p>
           <p className="text-sm lg:text-base pt-2 max-w-2/3">
             {/* All in one: an educational kit, a distributed air measuring system
@@ -135,19 +135,19 @@ export function AirBoxProject() {
             ,<b> programming</b> and <b> networking</b>.
           </p>
           <p className="text-sm lg:text-base max-w-3/5 pt-2">
-            <b className="text-primary">Airbox</b> allows high-schoolers to gain
+            <b className="text-accent">Airbox</b> allows high-schoolers to gain
             <b> real-world experience</b> in programming and electronics by
             allowing them to build useful infrastructure together with us, the
             mentors.
           </p>
         </div>
       </ProjectCardCell>
-      <ProjectCardCell className="bg-neutral text-neutral-content row-span-2">
+      <ProjectCardCell className="bg-primary text-primary-content row-span-2">
         <div className="absolute    w-full h-full   top-0  max-h-full max-w-full overflow-clip"></div>
         <div className="p-2 flex flex-col h-full justify-center items-center relative">
           <div className="h-1/2 w-1/2 relative ">
             <FaBatteryFull className="absolute h-full w-full text-success translate-1" />
-            <FaBatteryFull className="relative z-10 h-full w-full text-primary " />
+            <FaBatteryFull className="relative z-10 h-full w-full text-primary-content " />
           </div>
 
           <p className="md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-wide w-full text-start">
@@ -157,7 +157,7 @@ export function AirBoxProject() {
             A <span className=" font-bold">single</span> charge
           </p>
           <p className="text-sm xl:text-lg w-full text-start">
-            Powered by <span className="text-primary font-bold ">recycled</span>{" "}
+            Powered by <span className="text-accent font-bold ">recycled</span>{" "}
             lithium batteries
           </p>
         </div>
