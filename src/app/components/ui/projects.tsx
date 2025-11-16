@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaBatteryFull,
   FaClock,
@@ -88,9 +89,9 @@ export function AirBoxProject() {
             microcontroller.
           </p>
           <div className="flex-1"></div>
-          <button className="btn btn-block btn-primary rounded-xl">
+          <Link href="/airbox" className="btn btn-block btn-primary rounded-xl">
             Read More
-          </button>
+          </Link>
         </div>
       </ProjectCardBody>
     </ProjectCard>
