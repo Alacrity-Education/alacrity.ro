@@ -67,7 +67,7 @@ const members: TeamMember[] = [
   {
     name: "Sima Bianca",
     role: "Student Researcher",
-    image: "/team/bianca.png",
+    image: "/team/bianca.jpeg",
     linkedinUrl: "https://www.linkedin.com/in/bianca-ioana-sima-a97073327",
   },
   {
@@ -119,7 +119,7 @@ const members: TeamMember[] = [
 
 export default async function Team() {
   return (
-    <div className="z-20 h-max bg-base-200 flex flex-col items-center py-10 ">
+    <div className="z-20 h-max bg-base-100 flex flex-col items-center py-10 ">
       <div className="text-2xl md:text-4xl lg:text-5xl font-semibold py-10">
         Meet the team behind <span className="text-primary">Alacrity</span>
       </div>

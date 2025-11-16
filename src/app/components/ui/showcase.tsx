@@ -36,7 +36,7 @@ achieve that in our NGO.`,
     },
   ];
   return (
-    <div className="h-max bg-base-100 z-20 flex flex-col items-center py-10 pb-20">
+    <div className="h-max bg-base-100 z-20 flex flex-col  items-center py-10 pb-20">
       <h2 className="text-2xl sm:text-5xl font-semibold py-16">
         Perks. Only some of them.
       </h2>
@@ -51,7 +51,7 @@ achieve that in our NGO.`,
 
 const Card = ({ title, text, link, linkText, image }: CardProps) => {
   return (
-    <div className="card bg-base-100 md:w-80 lg:w-96 shadow-xl">
+    <div className="card dark:border-1 border-primary/30 bg-base-100 md:w-80 lg:w-96 shadow-xl">
       <figure className="h-40  bg-primary">
         <div className="invert h-full w-full"> {image}</div>
       </figure>
