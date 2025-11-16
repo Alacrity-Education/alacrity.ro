@@ -15,7 +15,7 @@
     --color-secondary: var(--color-pink-700);
     --color-secondary-content: var(--color-white);
     --color-accent: var(--color-emerald-400);
-    --color-accent-content: var(--color-white);
+    --color-accent-content: var(--color-black);
     --color-neutral: oklch(100% 0 0);
     --color-neutral-content: oklch(21% 0.006 285.885);
     --color-info: var(--color-blue-500);
@@ -47,10 +47,10 @@
     --color-base-content: oklch(21% 0.006 285.885);
     --color-primary: #5863ff;
     --color-primary-content: #ffffff;
-    --color-secondary: var(--color-pink-700);
+    --color-secondary: var(--color-pink-800);
     --color-secondary-content: var(--color-white);
-    --color-accent: var(--color-emerald-400);
-    --color-accent-content: var(--color-white);
+    --color-accent: var(--color-emerald-300);
+    --color-accent-content: var(--color-black);
     --color-neutral: oklch(100% 0 0);
     --color-neutral-content: oklch(21% 0.006 285.885);
     --color-info: var(--color-blue-500);
@@ -118,8 +118,16 @@
 }
 
 .custom-shape-divider-bottom-1737549060 .shape-fill {
-    @apply fill-base-200;
+    @apply fill-base-100;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    max-width: screen;
+    overflow-x: clip;
+}
+
 
 
 @layer components {

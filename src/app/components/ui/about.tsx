@@ -33,7 +33,7 @@ export default function About() {
       style={maskStyle}
     >
       <div className="absolute h-full w-full overflow-clip">
-        <Cyclone className="h-full absolute -left-1/3 top-1/3 w-full scale-[2] stroke-base-100 mix-blend-overlay dark:mix-blend-normal invert dark:invert-0 opacity-50 dark:opacity-100" />
+        <Cyclone className="h-full absolute -left-1/3 top-1/3 w-full scale-[2] stroke-base-100 mix-blend-overlay dark:mix-blend-normal invert dark:invert-0 opacity-50 dark:opacity-50" />
       </div>
 
       <div className="pt-44 flex flex-col w-full items-center gap-10 z-10 py-10">
@@ -59,7 +59,6 @@ export default function About() {
             </div>
           </div>
           <div className="px-10">
-            {/* ... your text content ... */}
             <h2 className="text-3xl sm:text-3xl md:text-6xl font-bold">
               Wait, who?
             </h2>
@@ -83,7 +82,7 @@ export default function About() {
         </div>
         <Link
           href="/about"
-          className="btn  sm:btn-xl btn-primary -translate-y-3 hover:translate-x-1 hover:-translate-y-4 transition-all duration-300"
+          className="btn  sm:btn-xl  -translate-y-3 hover:translate-x-1 hover:-translate-y-4 transition-all duration-300"
         >
           Check out Alacrity's history!
         </Link>

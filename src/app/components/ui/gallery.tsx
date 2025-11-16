@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen w-screen relative z-40">
+    <div className="min-h-screen w-screen relative z-40  bg-gradient-to-b from-base-100 to-base-300 h-max">
       <div className="custom-shape-divider-bottom-1737549060 ">
         <svg
           data-name="Layer 1"
@@ -19,7 +19,7 @@ const Gallery = () => {
         </svg>
       </div>
 
-      <div className="relative h-max bg-base-200 flex flex-col items-center py-10 pb-20">
+      <div className="relative h-max flex flex-col items-center py-10 pb-20">
         <div className="text-2xl sm:text-5xl font-semibold py-16 text-center">
           <span className="text-black dark:text-white">Our Impact. </span>
           <span className="text-primary">In Pictures.</span>
