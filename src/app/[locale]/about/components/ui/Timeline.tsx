@@ -211,7 +211,7 @@ export function Timeline() {
     <div className="relative min-h-[70vh] h-max w-full bg-base-200 flex flex-col items-start p-10 border-4 border-primary dark:border-primary/30 rounded-lg shadow-xl">
       <button
         onClick={scrollLeft}
-        className="hidden sm:block btn btn-xl z-10 absolute left-10 bottom-10 btn-circle btn-accent hover:-translate-y-1 transition-all"
+        className="hidden sm:block btn btn-xl z-10 absolute left-10 bottom-10 btn-circle btn-primary hover:-translate-y-1 transition-all"
       >
         <LeftArrow className="h-full w-full invert" />
       </button>
@@ -232,7 +232,7 @@ export function Timeline() {
       </div>
       <button
         onClick={scrollRight}
-        className="hidden sm:block btn btn-xl z-10 absolute right-10 bottom-10 btn-circle btn-accent hover:-translate-y-1 transition-all"
+        className="hidden sm:block btn btn-xl z-10 absolute right-10 bottom-10 btn-circle btn-primary hover:-translate-y-1 transition-all"
       >
         <RightArrow className="h-full w-full invert" />
       </button>

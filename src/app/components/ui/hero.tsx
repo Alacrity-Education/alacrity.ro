@@ -15,7 +15,7 @@ export default function Hero({
       </div>
       <div
         className={
-          "h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 " +
+          "h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 -rotate-12 -z-20  opacity-70 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 " +
           (maskType ? maskType : "mask-circle")
         }
       ></div>
