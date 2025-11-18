@@ -23,10 +23,7 @@ export default function Navbar() {
               />{" "}
             </svg>
           </div>
-          <ul
-            tabIndex="-1"
-            className="menu dropdown-content bg-base-300 rounded-box z-1 mt-5 w-52 p-2 shadow"
-          >
+          <ul className="menu dropdown-content bg-base-300 rounded-box z-1 mt-5 w-52 p-2 shadow">
             <li>
               <details>
                 <summary>Projects</summary>
