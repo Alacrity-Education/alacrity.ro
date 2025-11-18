@@ -1,7 +1,9 @@
+import FairHero from "./components/hero";
+
 export default function Page() {
   return (
-    <div>
-      <div></div>
-    </div>
+    <>
+      <FairHero />
+    </>
   );
 }

@@ -14,7 +14,7 @@ const HeroContent = () => {
   return (
     <>
       <HeroImage
-        className="rounded-lg shadow-2xl md:scale-125 "
+        className="rounded-lg shadow-2xl md:scale-125 mt-10 sm:mt-0"
         src="/about/team.jpg"
         alt="Alacrity Education Team"
       />
