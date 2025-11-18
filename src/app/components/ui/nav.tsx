@@ -71,10 +71,10 @@ export default function Navbar() {
               <summary>Projects</summary>
               <ul className="p-2 bg-base-300 w-52">
                 <li>
-                  <a>Airbox</a>
+                  <Link href="/airbox">Airbox</Link>
                 </li>
                 <li>
-                  <a>Raven1 Science Fair</a>
+                  <Link href="/fair">Raven1 Science Fair</Link>
                 </li>
               </ul>
             </details>
