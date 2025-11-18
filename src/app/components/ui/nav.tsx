@@ -60,7 +60,9 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Alacrity Education</a>
+        <Link href="/" className="btn btn-ghost text-xl">
+          Alacrity Education
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 z-10">
