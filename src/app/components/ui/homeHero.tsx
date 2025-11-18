@@ -19,9 +19,9 @@ const HeroContent = () => {
       />
 
       <HeroText>
-        <h1 className="text-3xl md:text-3xl lg:text-5xl tracking-wide font-bold text-center text-base-content/90  sm:text-start sm:pt-4">
+        <h1 className="text-3xl md:text-3xl lg:text-5xl tracking-wide font-bold text-center text-base-content/95 sm:text-base-content/90  sm:text-start sm:pt-4">
           Improving the education <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary/90 to-secondary/90">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary/95 to-secondary/95 sm:from-primary/90 sm:to-secondary/90">
             of the future
           </span>
         </h1>
