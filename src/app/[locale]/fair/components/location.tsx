@@ -4,7 +4,7 @@ import * as React from "react";
 import Map, { Marker, Popup } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Link from "next/link";
-import { FaArrowTrendUp, FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa6";
 
 const LOCATION = {
   longitude: 26.094224,
@@ -21,9 +21,9 @@ export default function FairLocation() {
       </p>
       <Link
         href="https://www.google.com/maps/dir/?api=1&destination=44.446075,26.094224"
-        className="text-base md:text-lg font-semibold mb-8 btn btn-sm md:btn-md btn-primary "
+        className="text-sm md:text-lg font-semibold mb-8 btn btn-sm md:btn-md btn-primary "
       >
-        str. Christian Thell no. 22, sector 1{" "}
+        str. Christian Thell no. 22{" "}
         <span>
           {" "}
           <FaArrowUp className="h-5 w-5 rotate-45" />
@@ -45,6 +45,7 @@ export default function FairLocation() {
               closeButton={false}
               closeOnClick={false}
               closeOnMove={false}
+              focusAfterOpen={false}
               anchor={"bottom"}
               className=""
               {...LOCATION}
