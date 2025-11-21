@@ -29,26 +29,18 @@ export default function Navbar() {
                 <summary>Projects</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Airbox</a>
+                    <Link href="/airbox">Airbox</Link>
                   </li>
                   <li>
-                    <a>Raven1 Science Fair</a>
+                    <Link href="/fair">Raven1 Science Fair</Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <details>
-                <summary>Raven1</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Landing</a>
-                  </li>
-                  <li>
-                    <a>About</a>
-                  </li>
-                </ul>
-              </details>
+              <Link href="https://blog.alacrity.ro" className="">
+                RAVEN1 Robotics
+              </Link>
             </li>
             <li>
               <Link href="https://blog.alacrity.ro"> Alacrity Blog</Link>
