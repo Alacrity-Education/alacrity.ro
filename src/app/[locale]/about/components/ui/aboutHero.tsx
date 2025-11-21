@@ -1,4 +1,4 @@
-import Hero, { HeroImage, HeroText } from "@/app/components/ui/hero";
+import Hero, { HeroImage, HeroText } from "@/app/components/ui/primitives/hero";
 import Image from "next/image";
 import Link from "next/link";
 import { DownArrow } from "./Timeline";

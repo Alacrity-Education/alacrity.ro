@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero, { HeroImage, HeroText } from "./hero";
+import Hero, { HeroImage, HeroText } from "./primitives/hero";
 
 export default function HomeHero() {
   return (

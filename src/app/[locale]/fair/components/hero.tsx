@@ -1,5 +1,6 @@
-import Hero, { HeroImage, HeroText } from "@/app/components/ui/hero";
+import Hero, { HeroImage, HeroText } from "@/app/components/ui/primitives/hero";
 import Image from "next/image";
+import AddToCalendar from "./addToCalendar";
 
 const FAIR_COLOR_1 = "#b67183";
 const FAIR_COLOR_2 = "#8a82ae";
@@ -24,26 +25,21 @@ const HeroContent = () => {
       <HeroText>
         <h1 className="text-3xl md:text-3xl lg:text-5xl tracking-wide font-bold text-center text-base-content/95 sm:text-base-content/90  sm:text-start sm:pt-4">
           <span className="text-primary"> Raven1</span> <br />
-          Science Fair
+          <span>Christmas Science Fair</span>
         </h1>
         <p className="py-10 sm:py-6 text-base md:text-xl text-base-content md:mr-20">
-          We’re opening Romania’s first{" "}
-          <b className="text-primary">open-source STEAM</b> lab, where{" "}
-          <b className="text-primary">education </b>
-          meets <b className="text-primary">invention</b>.
+          We’re celebrating the holidays by bringing{" "}
+          <b className="text-primary">science</b> to the forefront of{" "}
+          <b className="text-primary">christmas</b>.
           <br />
           <br />
-          From air quality sensors to environmental tech, we help young minds
-          shape a{" "}
-          <b className="text-primary">sustainable and intelligent future</b>.
+          Experience a unique{" "}
+          <b className="text-primary">Christmas Science Fair</b> filled with
+          spectacular experiments and engineering. Whether you are building
+          robots or rediscovering retro tech, come see the{" "}
+          <b className="text-primary">magic behind the science</b>.
         </p>
-
-        <a
-          href="https://buymeacoffee.com/alacrity_education?ref=alacrity.education"
-          className="btn btn-primary border-0 btn-lg hover:-translate-y-1 duration-500 transition-transform z-50 shadow-xl hover:shadow-2xl "
-        >
-          Donate for our lab!
-        </a>
+        <AddToCalendar />
       </HeroText>
     </>
   );
