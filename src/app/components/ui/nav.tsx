@@ -60,7 +60,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="btn btn-ghost text-base md:text-xl">
           Alacrity Education
         </Link>
       </div>
