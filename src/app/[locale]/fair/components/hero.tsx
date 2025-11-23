@@ -19,11 +19,11 @@ const HeroContent = () => {
       <HeroImage
         src="/sciencefair/tree.png"
         alt="Alacrity Education Logo"
-        className="bg-gradient-to-r from-[#b67183] to-[#8a82ae] rounded-full shadow-2xl scale-75 md:scale-100"
+        className="bg-gradient-to-tr from-base-100 to-primary rounded-full shadow-2xl scale-75 md:scale-100"
       />
 
       <HeroText>
-        <h1 className="text-3xl md:text-3xl lg:text-5xl tracking-wide font-bold text-center text-base-content/95 sm:text-base-content/90  sm:text-start sm:pt-4">
+        <h1 className="text-3xl md:text-3xl lg:text-5xl tracking-wide font-bold  text-base-content/95 sm:text-base-content/90  sm:text-start sm:pt-4">
           <span className="text-primary"> Raven1</span> <br />
           <span>Christmas Science Fair</span>
         </h1>

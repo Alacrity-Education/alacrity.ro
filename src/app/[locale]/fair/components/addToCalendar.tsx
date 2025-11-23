@@ -80,7 +80,7 @@ export default function AddToCalendar() {
   return (
     <button
       type="button"
-      className="btn btn-primary bg-gradient-to-l from-[#b67183] to-[#8a82ae] border-0 hover:brightness-120"
+      className="btn btn-primary  "
       onClick={handleDownload}
     >
       Save the date

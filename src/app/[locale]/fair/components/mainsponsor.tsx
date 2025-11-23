@@ -22,7 +22,7 @@ export default function MainSponsor() {
     <Carousel title={"Main Sponsors"} items={items}>
       {items.map((item, index) => (
         <CarouselCard
-          className="bg-gradient-to-l from-[#b67183] to-[#8a82ae]"
+          className="bg-gradient-to-bl from-primary via-primary to-secondary "
           key={item.alt + index}
           {...item}
         />
