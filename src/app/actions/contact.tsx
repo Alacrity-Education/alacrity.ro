@@ -6,7 +6,7 @@ import { render } from '@react-email/render';
 
 {/* Trebuie modificate datele de contact */}
 const resend = new Resend(process.env.RESEND_API_KEY);
-const SEND_TO_EMAIL = 'gabi.ct2002@yahoo.com';
+const SEND_TO_EMAIL = 'inbox@alacrity.ro';
 
 export type ContactFormState = {
   success: boolean;
