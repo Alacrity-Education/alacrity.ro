@@ -4,8 +4,7 @@ import { Resend } from 'resend';
 import { ContactEmailTemplate } from '@/app/[locale]/contact/components/email-template';
 import { render } from '@react-email/render';
 
-{/* RESEND_API_KEY=re_btASgnzw_7gFCfSbsQ8kn1LpRvKZ6UU4y 
-  Trebuie modificate datele de contact*/}
+{/* Trebuie modificate datele de contact */}
 const resend = new Resend(process.env.RESEND_API_KEY);
 const SEND_TO_EMAIL = 'gabi.ct2002@yahoo.com';
 
