@@ -35,7 +35,7 @@ export async function sendContactEmail(prevState: ContactFormState, formData: Fo
       />
     );
 
-    await resend.emails.send({
+    const {error} = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: SEND_TO_EMAIL, 
       replyTo: email,
@@ -43,10 +43,15 @@ export async function sendContactEmail(prevState: ContactFormState, formData: Fo
       html: emailHtml,
     });
 
+    if (error) {
+      console.error("Resend API Error:", error);
+      throw new Error(error?.message);
+    }
+
     return { success: true, message: "Message sent successfully!" };
 
   } catch (error) {
-    console.error("Error sending message:", error);
-    return { success: false, message: "Error sending message." };
+    console.error("Server Action Error:", error);
+    return { success: false, message: "Oops, looks like something went wrong. Call us via phone or send a message directly." };
   }
 }

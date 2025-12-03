@@ -3,8 +3,9 @@ import ContactMap from "./location";
 import { FaPhone, FaEnvelope } from "react-icons/fa6";
 
 const CONTACT = {
-  phone: "+40 123 456 789",
-  email: "contact@alacrity.ro"
+  phone: "+40 736 382 448",
+  email: "contact@alacrity.ro",
+  name: "Vavilov Iris",
 }
 
 export default function ContactInfo() {
@@ -35,7 +36,7 @@ export default function ContactInfo() {
               <div className="bg-white/20 p-2 rounded-full group-hover:scale-110 transition-transform shadow-sm">
                 <FaPhone className="h-3 w-3" />
               </div>
-              <span className="font-medium tracking-wide text-sm md:text-base">{CONTACT.phone}</span>
+              <span className="font-medium tracking-wide text-sm md:text-base">{CONTACT.phone} ({CONTACT.name})</span>
             </a>
 
             {/* Email */}

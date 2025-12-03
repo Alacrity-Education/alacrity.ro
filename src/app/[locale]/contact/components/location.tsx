@@ -28,7 +28,7 @@ export default function ContactMap() {
         mapStyle="mapbox://styles/lucasainenco/clo9pjg5000rp01qxh60taxwj"
       >
         <Marker {...LOCATION} anchor="bottom">
-          <FaLocationDot className="text-primary h-8 w-8 drop-shadow-lg animate-bounce" />
+          <FaLocationDot className="text-primary h-8 w-8 drop-shadow-lg" />
           
           <Popup
             closeButton={false}

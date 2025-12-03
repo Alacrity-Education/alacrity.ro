@@ -13,9 +13,9 @@ const ContactHeroContent = () => {
   return (
     <>
       <HeroImage
-        src="/ContactUs.jpeg" 
+        src="/logo.svg" 
         alt="Contact Alacrity Team"
-        className="rounded-lg shadow-2xl md:scale-125 mt-10 sm:mt-0"
+        className="bg-white rounded-full shadow-2xl scale-75 md:scale-100"
       />
 
       <HeroText>

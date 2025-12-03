@@ -9,7 +9,7 @@ export default function ContactPage() {
       <ContactHero />
 
       <div className="container mx-auto px-4 -mt-8 relative z-10">
-        <div className="card bg-base-100/300 shadow-xl border border-base-200 border-primary/20 h-full rounded-xl overflow-hidden">
+        <div className="card bg-base-100 shadow-xl border border-base-200 border-primary/20 h-full rounded-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             
             {/* Left: Contact Form */}
