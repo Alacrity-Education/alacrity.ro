@@ -126,6 +126,7 @@ body, html {
     padding: 0;
     max-width: screen;
     overflow-x: clip;
+    scroll-behavior: smooth;
 }
 
 .mask-snowflake {
