@@ -29,7 +29,7 @@ export function CardImage({
   return (
     <div
       className={
-        "h-52 w-full relative max-w-full overflow-clip rounded-xl " +
+        "h-34 w-full relative max-w-full overflow-clip rounded-xl " +
         (className ? className : "")
       }
     >
@@ -69,3 +69,20 @@ export function CardCell({
   );
 }
 
+export function CardCTA({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className="pt-10 w-full">
+      <a href={href} className={"btn btn-primary btn-block rounded-xl " + (className || "")}>
+        {children}
+      </a>
+    </div>
+  );
+}

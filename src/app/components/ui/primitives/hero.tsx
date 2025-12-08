@@ -35,21 +35,24 @@ export const HeroImage = ({
   src,
   alt,
   className,
+                              backgroundClassName
 }: {
   src: string;
   alt: string;
   className?: string;
+    backgroundClassName?: string;
 }) => {
   return (
     <div className="w-full px-10 md:w-2/5 relative pt-10 sm:pt-0">
-      <div className="relative z-0 lg:h-full overflow-visible hover:-translate-y-1 transition-transform w-full mb-10 md:mb-0">
+      <div className={"lg:h-full overflow-visible hover:-translate-y-1 transition-transform w-full mb-10 md:mb-0 "+
+          (backgroundClassName ? backgroundClassName : "")}>
         <Image
           src={src}
           alt={alt}
           width={2000}
           height={2000}
           className={
-            "w-full relative object-cover object-bottom " +
+            "w-full object-cover object-bottom " +
             (className ? className : "")
           }
         />
