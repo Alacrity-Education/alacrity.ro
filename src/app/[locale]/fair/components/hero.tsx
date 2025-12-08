@@ -20,7 +20,7 @@ const HeroContent = () => {
         src="/sciencefair/tree.png"
         alt="Alacrity Education Logo"
         backgroundClassName="bg-gradient-to-tr scale-75 md:scale-100 from-base-100 to-primary rounded-full snow ![--snow-scale:600px] ![--snow-duration:30s] "
-        className="rounded-full  brightness-110"
+        className="rounded-full brightness-110"
       />
 
       <HeroText>

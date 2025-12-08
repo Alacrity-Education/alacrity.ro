@@ -7,7 +7,7 @@ export default function StandsGrid() {
   return (
     <div className="relative z-20 w-full max-w-4xl mx-auto px-8 my-12">
       
-      <section className="w-full p-6 bg-[#1C1224] text-white rounded-3xl shadow-2xl border border-white/5">
+      <section className="w-full p-6 bg-[#1C1224] bg-base-100 text-white rounded-3xl shadow-2xl border border-white/5">
         
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Stands</h2>
 
