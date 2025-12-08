@@ -38,7 +38,8 @@ export default function Footer() {
         <nav>
           <h6 className="footer-title">NGO</h6>
           <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
+          {/* <a className="link link-hover">Contact</a> */}
+          <Link href="/contact" className="link link-hover">Contact</Link>
           <a className="link link-hover">Press kit</a>
           <a className="link link-hover">Become a volunteer</a>
           <a className="link link-hober">Partnerships</a>

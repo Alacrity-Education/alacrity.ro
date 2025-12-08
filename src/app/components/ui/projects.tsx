@@ -12,7 +12,7 @@ export default function Projects() {
       <h2 className="text-2xl sm:text-5xl font-semibold py-16 text-center">
         Alacrity Projects.
       </h2>
-      <div className="flex flex-row justify-center gap-6">
+      <div className="flex flex-col md:flex-row items-center md:justify-center gap-6">
         <AirBoxProject />
           <ScienceFair />
       </div>
@@ -24,7 +24,7 @@ export function AirBoxProject() {
   return (
     <ProjectCard>
       <ProjectCardImage>
-        <div className="h-full w-full relative bg-primary text-primary-content">
+        <div className=" w-full !h-34 relative bg-primary text-primary-content">
           <Image
             src="/AirBox.svg"
             alt="AirBox Project Image"
@@ -32,7 +32,7 @@ export function AirBoxProject() {
             height={1000}
             className="object-cover h-full w-full object-center rounded-lg absolute -right-1/3 top-0 "
           />
-          <div className="text-4xl relative font-bold z-10 p-4 px-6 h-full flex items-center bg-gradient-to-r from-black/50 to-black/20">
+          <div className="text-4xl h-34 relative font-bold z-10 p-4 px-6 h-full flex items-center bg-gradient-to-r from-black/50 to-black/20">
             50+ <br /> students
           </div>
         </div>
@@ -57,17 +57,14 @@ export function ScienceFair() {
     return (
         <ProjectCard>
             <ProjectCardImage>
-                <div className="h-full w-full relative bg-primary text-primary-content">
+                <div className="h-full w-full relative bg-primary text-primary-content snow  [--snow-scale:250px] [--snow-opacity:0.8] ">
                     <Image
-                        src="/AirBox.svg"
-                        alt="AirBox Project Image"
+                        src="/sciencefair/tree.png"
+                        alt="Science Fair Logo"
                         width={1000}
                         height={1000}
-                        className="object-cover h-full w-full object-center rounded-lg absolute -right-1/3 top-0 "
+                        className="object-cover brightness-110  h-max w-full object-center rounded-lg scale-75 -top-12 "
                     />
-                    <div className="text-4xl relative font-bold z-10 p-4 px-6 h-full flex items-center bg-gradient-to-r from-black/50 to-black/20">
-                        50+ <br /> students
-                    </div>
                 </div>
             </ProjectCardImage>
             <ProjectCardBody>
