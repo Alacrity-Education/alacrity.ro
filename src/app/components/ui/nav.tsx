@@ -38,7 +38,7 @@ export default function Navbar() {
               </details>
             </li>
             <li>
-              <Link href="https://blog.alacrity.ro" className="">
+              <Link href={"/underdev"} className="">
                 RAVEN1 Robotics
               </Link>
             </li>
@@ -72,7 +72,7 @@ export default function Navbar() {
             </details>
           </li>
           <li>
-            <Link href="https://blog.alacrity.ro" className="">
+            <Link href={"/underdev"} className="">
               RAVEN1 Robotics
             </Link>
           </li>

@@ -29,26 +29,26 @@ export default function Footer() {
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 z-10 relative">
         <nav>
           <h6 className="footer-title">Projects</h6>
-          <a className="link link-hover">Alacrity AirBox</a>
-          <a className="link link-hover">Raven1</a>
-          <a className="link link-hover">Raven1 Science Fair</a>
-          <a className="link link-hover">Digital Badges</a>
-          <a className="link link-hover">Alacrity Blog</a>
+          <Link href={"/airbox"} className="link link-hover">Alacrity AirBox</Link>
+          <Link href={"/underdev"} className="link link-hover">Raven1</Link>
+          <Link href={"/fair"} className="link link-hover">Raven1 Science Fair</Link>
+          <Link href={"/underdev"} className="link link-hover">Digital Badges</Link>
+          <Link href={"https://blog.alacrity.ro"} className="link link-hover">Alacrity Blog</Link>
         </nav>
         <nav>
           <h6 className="footer-title">NGO</h6>
-          <a className="link link-hover">About us</a>
+          <Link href={"/"} className="link link-hover">About us</Link>
           {/* <a className="link link-hover">Contact</a> */}
           <Link href="/contact" className="link link-hover">Contact</Link>
-          <a className="link link-hover">Press kit</a>
-          <a className="link link-hover">Become a volunteer</a>
-          <a className="link link-hober">Partnerships</a>
+          <Link href={"/underdev"} className="link link-hover">Press kit</Link>
+          <Link href={"/underdev"} className="link link-hover">Become a volunteer</Link>
+          <Link href={"/underdev"} className="link link-hober">Partnerships</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <Link href={"/underdev"} className="link link-hover">Terms of use</Link>
+          <Link href={"/underdev"} className="link link-hover">Privacy policy</Link>
+          <Link href={"/underdev"} className="link link-hover">Cookie policy</Link>
         </nav>
       </footer>
       <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4 flex flex-col sm:flex-row items-center gap-4">
