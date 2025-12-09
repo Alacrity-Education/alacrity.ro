@@ -123,7 +123,7 @@ export default function StandsGrid() {
                     RAVEN1
                 </h3>
                 <p className="text-[clamp(0.8rem,3.5vw,1.8rem)] md:text-[clamp(0.8rem,1.5vw,1.0rem)] leading-none mt-2">
-                  Meet one of the first VEXU<br/> Robotics Team in Europe.
+                  Meet one of the first VEXU<br/> Robotics Teams in Europe.
                 </p>
             </div>
 

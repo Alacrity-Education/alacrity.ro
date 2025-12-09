@@ -13,11 +13,6 @@ const partners = [
     src: "/partners/robo_badgers.png",
     alt: "RoboBadgers robotics team",
   },
-  {
-    href: "https://magurelesciencepark.ro/",
-    src: "/partners/msp.png",
-    alt: "Magurele Science Park",
-  },
 ];
 
 export default function Partners() {

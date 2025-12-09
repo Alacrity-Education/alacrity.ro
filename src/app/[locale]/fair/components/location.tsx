@@ -23,7 +23,7 @@ export default function FairLocation() {
         href="https://www.google.com/maps/dir/?api=1&destination=44.446075,26.094224"
         className="text-sm md:text-lg font-semibold mb-8 btn btn-sm md:btn-md btn-primary "
       >
-        str. Christian Thell no. 22{" "}
+        str. Christian Tell no. 22{" "}
         <span>
           {" "}
           <FaArrowUp className="h-5 w-5 rotate-45" />
