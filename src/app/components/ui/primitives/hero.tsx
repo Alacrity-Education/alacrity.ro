@@ -15,7 +15,7 @@ export default function Hero({
       </div>
       <div
         className={
-          "h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 -rotate-12 -z-20  opacity-60 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 " +
+          "h-screen w-screen absolute bg-gradient-to-tl dark:bg-gradient-to-br from-primary to-base-100 -rotate-12 -z-20  opacity-70 dark:opacity-40 rounded-full  left-1/2 translte-x-1/3 " +
           (maskType ? maskType : "mask-circle")
         }
       ></div>
@@ -35,21 +35,24 @@ export const HeroImage = ({
   src,
   alt,
   className,
+                              backgroundClassName
 }: {
   src: string;
   alt: string;
   className?: string;
+    backgroundClassName?: string;
 }) => {
   return (
     <div className="w-full px-10 md:w-2/5 relative pt-10 sm:pt-0">
-      <div className="relative z-0 lg:h-full overflow-visible hover:-translate-y-1 transition-transform w-full mb-10 md:mb-0">
+      <div className={"lg:h-full overflow-visible hover:-translate-y-1 transition-transform w-full mb-10 md:mb-0 "+
+          (backgroundClassName ? backgroundClassName : "")}>
         <Image
           src={src}
           alt={alt}
           width={2000}
           height={2000}
           className={
-            "w-full relative object-cover object-bottom " +
+            "w-full object-cover object-bottom " +
             (className ? className : "")
           }
         />

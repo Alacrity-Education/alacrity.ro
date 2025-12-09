@@ -1,4 +1,4 @@
-import Hero, { HeroImage, HeroText } from "@/app/components/ui/hero";
+import Hero, { HeroImage, HeroText } from "@/app/components/ui/primitives/hero";
 import Image from "next/image";
 import Link from "next/link";
 import { DownArrow } from "./Timeline";
@@ -14,14 +14,14 @@ const HeroContent = () => {
   return (
     <>
       <HeroImage
-        className="rounded-lg shadow-2xl md:scale-125 "
+        className="rounded-lg shadow-2xl md:scale-125 mt-10 sm:mt-0"
         src="/about/team.jpg"
         alt="Alacrity Education Team"
       />
 
       <HeroText>
         <BackToHome />
-        <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl pt-10 font-bold dark:text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl pt-10 font-bold text-base-content/95 sm:text-base-content/90">
           Hi, we're <b className="text-primary">Alacrity</b>
         </h1>
         <p className="text-lg sm:text-4xl pt-10 font-bold">

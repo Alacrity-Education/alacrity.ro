@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Card, CardBody, CardCTA, CardImage } from "@/app/components/ui/primitives/card";
 
 interface CardProps {
   title: string;
@@ -36,37 +37,34 @@ achieve that in our NGO.`,
     },
   ];
   return (
-    <div className="h-max bg-base-100 z-20 flex flex-col  items-center py-10 pb-20">
+    <div className="h-max bg-base-100 z-20 flex flex-col items-center py-10 pb-20">
       <h2 className="text-2xl sm:text-5xl font-semibold py-16">
         Perks. Only some of them.
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         {cards.map((card, index) => (
-          <Card key={index} {...card} />
+          <ShowcaseCard key={index} {...card} />
         ))}
       </div>
     </div>
   );
 };
 
-const Card = ({ title, text, link, linkText, image }: CardProps) => {
+const ShowcaseCard = ({ title, text, link, linkText, image }: CardProps) => {
   return (
-    <div className="card dark:border-1 border-primary/30 bg-base-100 md:w-80 lg:w-96 shadow-xl">
-      <figure className="h-40  bg-primary">
+    <Card>
+      <CardImage className="bg-primary">
         <div className="invert h-full w-full"> {image}</div>
-      </figure>
-      <div className="card-body ">
-        <h2 className="card-title text-xl">{title}</h2>
-        <p className="text-lg">{text}</p>
-        {link && (
-          <div className="card-actions justify-end pt-10 ">
-            <a href={link} className="btn btn-primary">
-              {linkText}
-            </a>
-          </div>
-        )}
-      </div>
-    </div>
+      </CardImage>
+      <CardBody className="h-full w-full">
+        <div className="relative w-full h-full flex flex-col">
+          <h3 className="text-3xl font-semibold">{title}</h3>
+          <p className="text-base text-base-content pt-2 leading-snug">{text}</p>
+          <div className="flex-1"></div>
+          {link && <CardCTA href={link}>{linkText}</CardCTA>}
+        </div>
+      </CardBody>
+    </Card>
   );
 };
 
