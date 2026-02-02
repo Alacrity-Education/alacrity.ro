@@ -17,26 +17,26 @@ interface TeamMember {
 const members: TeamMember[] = [
   {
     name: "Vavilov Iris",
-    role: "Founder and CEO",
+    role: "Vice President",
     image: "/team/iris.jpg",
     linkedinUrl: "https://www.linkedin.com/in/iris-vavilov/",
   },
   {
     name: "Heroiu Justinian",
-    role: "Founder and Research lead.",
+    role: "General Secretary",
     image: "/team/justin.png",
     linkedinUrl: "https://www.linkedin.com/in/heroiu-rares-justinian-021b231bb",
   },
   {
     name: "Alexa Gabriela",
-    role: "Founder and COO",
+    role: "President",
     image: "/team/tina.jpg",
     linkedinUrl:
       "https://www.linkedin.com/in/gabriela-florentina-alexa-37083033a",
   },
   {
     name: "Sainenco Luchian",
-    role: "Founder and CTO",
+    role: "Tech Lead.",
     image: "/team/luca.png",
     linkedinUrl: "https://www.linkedin.com/in/sainenco-luchian-ba879b271/",
   },
@@ -51,12 +51,6 @@ const members: TeamMember[] = [
     role: "Social Media Manager",
     image: "/team/musel.jpg",
     linkedinUrl: "https://www.linkedin.com/in/r%C4%83zvan-mu%C8%99el-a3618122b",
-  },
-  {
-    name: "Ionescu Andrei",
-    role: "Software Developer",
-    image: "/team/stefan.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ionescuaandrei/",
   },
   {
     name: "Druică Adina",
@@ -107,13 +101,6 @@ const members: TeamMember[] = [
     role: "Creative Director",
     image: "/team/paula.jpg",
     linkedinUrl: "https://www.instagram.com/perixbanu?igsh=Mmg5MWJtdzN6MmUx",
-  },
-  {
-    name: "Cosmin-Gabriel Cojocaru",
-    role: "UI/UX Designer",
-    image: "/team/cosmincojocaru.jpeg",
-    linkedinUrl:
-      "https://www.linkedin.com/in/cosmin-gabriel-cojocaru-698b84269/",
   },
 ];
 
