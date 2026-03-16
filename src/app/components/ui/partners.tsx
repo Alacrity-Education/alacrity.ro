@@ -21,6 +21,11 @@ const partners = [
     src: "/partners/innovalia.png",
     alt: "Innovalia",
   },
+    {
+    href: "https://eminescuipotesti.ro",
+    src: "/partners/memorialul.svg",
+    alt: "Memorialului Ipotești - Centrul Național de Studii Mihai Eminescu",
+  },
 ];
 
 export default function Partners() {

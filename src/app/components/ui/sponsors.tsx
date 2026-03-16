@@ -44,6 +44,11 @@ const sponsors = [
     alt: "JBC The Soldering Co.",
     src: "/sponsors/JBC-the-soldering-co.svg",
   },
+    {
+    href: "https://www.sps-international.com",
+    alt: "SPS International",
+    src: "/sponsors/sps.png",
+  },
 ];
 
 export default function Sponsors() {
