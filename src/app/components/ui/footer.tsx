@@ -39,7 +39,7 @@ export default function Footer() {
           <h6 className="footer-title">NGO</h6>
           <Link href={"/"} className="link link-hover">About us</Link>
           {/* <a className="link link-hover">Contact</a> */}
-          <a href="/public/gender-equality-plan.pdf" className="link link-hover" download>Gender Equality Plan 2026</a>
+          <a href="/gender-equality-plan.pdf" className="link link-hover" download>Gender Equality Plan 2026</a>
           <Link href="/contact" className="link link-hover">Contact</Link>
           <Link href={"/underdev"} className="link link-hover">Press kit</Link>
           <Link href={"/underdev"} className="link link-hover">Become a volunteer</Link>

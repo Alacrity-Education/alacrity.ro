@@ -17,7 +17,11 @@ interface TeamMember {
 const members: TeamMember[] = [
   {
     name: "Vavilov Iris",
+<<<<<<< HEAD
     role: "Vice President",
+=======
+    role: "Founder and COO",
+>>>>>>> 24a4881db68e0ad6432581eccb8ee6a1b7636ec6
     image: "/team/iris.jpg",
     linkedinUrl: "https://www.linkedin.com/in/iris-vavilov/",
   },
@@ -29,7 +33,11 @@ const members: TeamMember[] = [
   },
   {
     name: "Alexa Gabriela",
+<<<<<<< HEAD
     role: "President",
+=======
+    role: "Founder and CEO",
+>>>>>>> 24a4881db68e0ad6432581eccb8ee6a1b7636ec6
     image: "/team/tina.jpg",
     linkedinUrl:
       "https://www.linkedin.com/in/gabriela-florentina-alexa-37083033a",
